@@ -1,128 +1,322 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <!--#include file="./_head.html"-->
-        <link rel="stylesheet" href="../assets/css/vb/defult.css" />
-        <script src="../assets/js/custom.js"></script>
-    </head>
 
-    <body>
-        <div id="wrap">
-            <!--#include file="./_header.html"-->
-            <style>
-                @media (max-width: 992px) {
-                    .small-screen {
-                        height: 200px;
-                    }
-                }
+<head>
+    <!--#include file="./_head.html"-->
+    <link rel="stylesheet" href="../assets/css/vb/defult.css" />
+    <script src="../assets/js/custom.js"></script>
+</head>
 
-                /* 요청하신 이미지(막대 형태) 스타일의 Swiper Pagination 커스텀 */
-                .swiperModule .swiper-pagination {
-                    position: absolute;
-                    bottom: 20px;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 6px;
-                    z-index: 10;
+<body>
+    <div id="wrap">
+        <!--#include file="./_header.html"-->
+        <style>
+            @media (max-width: 992px) {
+                .small-screen {
+                    height: 200px;
                 }
+            }
 
-                .swiperModule .swiper-pagination-bullet {
-                    width: 16px;
-                    height: 4px;
-                    border-radius: 2px;
-                    background-color: rgba(0, 0, 0, 0.2);
-                    margin: 0 !important;
-                    opacity: 1;
-                    transition: all 0.3s ease;
-                    cursor: pointer;
-                }
+            /* 요청하신 이미지(막대 형태) 스타일의 Swiper Pagination 커스텀 */
+            .swiperModule .swiper-pagination {
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                z-index: 10;
+            }
 
-                .swiperModule .swiper-pagination-bullet-active {
-                    width: 32px;
-                    /* 활성화 시 가로로 길어짐 */
-                    background-color: #333;
-                    /* 활성화 색상 (검정에 가깝게) */
-                }
-            </style>
-            <!-- 컨텐츠 시작 -->
-            <section class="banner_section no-padding">
-                <div class="container-fluid padding-ten-lr sm-padding-four-lr">
-                    <div class="xans-smart-banner-admin-PC00001">
-                        <div
-                            class="swiperModule"
-                            data-pc-slides="1"
-                            data-ta-slides="1"
-                            data-mo-slides="1"
-                            data-pc-gaps="12"
-                        >
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="slideInner">
-                                            <a href="">
-                                                <img src="../assets/img/pdt-list-banner01.png" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slideInner">
-                                            <a href="">
-                                                <img src="../assets/img/pdt-list-banner01.png" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slideInner">
-                                            <a href="">
-                                                <img src="../assets/img/pdt-list-banner01.png" alt="" />
-                                            </a>
-                                        </div>
+            .swiperModule .swiper-pagination-bullet {
+                width: 16px;
+                height: 4px;
+                border-radius: 2px;
+                background-color: rgba(0, 0, 0, 0.2);
+                margin: 0 !important;
+                opacity: 1;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            .swiperModule .swiper-pagination-bullet-active {
+                width: 32px;
+                /* 활성화 시 가로로 길어짐 */
+                background-color: #333;
+                /* 활성화 색상 (검정에 가깝게) */
+            }
+        </style>
+        <!-- 컨텐츠 시작 -->
+        <section class="top-space padding-30px-tb sm-padding-15px-tb"></section>
+        <section class="banner_section no-padding">
+            <div class="container-fluid padding-ten-lr sm-padding-four-lr">
+                <div class="xans-smart-banner-admin-PC00001">
+                    <div class="swiperModule" data-pc-slides="1" data-ta-slides="1" data-mo-slides="1"
+                        data-pc-gaps="12">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slideInner">
+                                        <a href="keyin-detail-l.html">
+                                            <img src="../assets/img/pdt-list-banner01.png" alt="" />
+                                        </a>
                                     </div>
                                 </div>
-                                <!-- 페이징 위치 (기본 가운데 아래) -->
-                                <div class="swiper-pagination"></div>
+                                <div class="swiper-slide">
+                                    <div class="slideInner">
+                                        <a href="keyin-detail-s.html">
+                                            <img src="../assets/img/pdt-list-banner01.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slideInner">
+                                        <a href="keyin-detail-e.html">
+                                            <img src="../assets/img/pdt-list-banner01.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 페이징 위치 (기본 가운데 아래) -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start page title section -->
+        <section class="p-0 small-screen position-relative wow animate__fadeIn">
+            <div class="bg-extra-dark-gray z-index-0"></div>
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div
+                        class="col-12 small-screen d-flex flex-column justify-content-center page-title-large text-center">
+                        <!-- start page title -->
+                        <h1 class="alt-font text-extra-dark-gray font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0">
+                            KEYIN<span class="font-weight-400 margin-15px-left sm-margin-10px-left">SERIES </span>
+                        </h1>
+                        <!-- end page title -->
+                        <!-- start sub title -->
+                        <span
+                            class="d-block text-extra-dark-gray opacity6 margin-10px-top margin-10px-bottom alt-font">4th
+                            Generation Smart Door Lock line up <br class="mobile" />with patented Blinklock
+                            Mortise</span>
+                        <!-- end sub title -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page title section -->
+        <div id="container">
+            <div id="contents">
+                <!-- 컨텐츠 시작 -->
+                <section class="pt-0">
+                    <div
+                        class="xans-element- xans-product xans-product-listmain-3 xans-product-listmain xans-product-3 container-fluid padding-ten-lr sm-padding-four-lr">
+                        <div class="row">
+                            <div class="col-12 sm-no-padding filter-content overflow-hidden vb-product">
+                                <ul class="grid" id="product-list">
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-s.html">
+                                                        <img src="../assets/img/product_list/S.jpg" alt="Keyin S">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin S</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-e.html">
+                                                        <img src="../assets/img/product_list/E.jpg" alt="Keyin E">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin E</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-l.html">
+                                                        <img src="../assets/img/product_list/L.jpg" alt="Keyin L">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin L</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-lx.html">
+                                                        <img src="../assets/img/product_list/LX.jpg" alt="Keyin LX">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin LX</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-ha.html">
+                                                        <img src="../assets/img/product_list/HA.jpg" alt="Keyin HA">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin HA</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-l-alpha-plus.html">
+                                                        <img src="../assets/img/product_list/L_alpa_plus.jpg"
+                                                            alt="Keyin L 알파 플러스">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin L 알파
+                                                                    플러스</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-l-alpha.html">
+                                                        <img src="../assets/img/product_list/L_alpha.jpg"
+                                                            alt="Keyin L 알파">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">Keyin L 알파</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-">
+                                            <figure class="thumbnail">
+                                                <div
+                                                    class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                                    <a href="/keyin-detail-plus-finger.html">
+                                                        <img src="../assets/img/product_list/plus_finger.jpg"
+                                                            alt="플러스핑거">
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <figcaption class="bg-white">
+                                                <div class="portfolio-hover-main text-center">
+                                                    <div class="portfolio-hover-box align-middle">
+                                                        <div
+                                                            class="description portfolio-hover-content position-relative">
+                                                            <strong class="name_b"><a href="">플러스핑거</a></strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- start page title section -->
-            <section class="p-0 small-screen position-relative wow animate__fadeIn">
-                <div class="bg-extra-dark-gray z-index-0"></div>
-                <div class="container position-relative">
-                    <div class="row align-items-center">
-                        <div
-                            class="col-12 small-screen d-flex flex-column justify-content-center page-title-large text-center"
-                        >
-                            <!-- start page title -->
-                            <h1
-                                class="alt-font text-extra-dark-gray font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0"
-                            >
-                                KEYIN<span class="font-weight-400 margin-15px-left sm-margin-10px-left">SERIES </span>
-                            </h1>
-                            <!-- end page title -->
-                            <!-- start sub title -->
-                            <span
-                                class="d-block text-extra-dark-gray opacity6 margin-10px-top margin-10px-bottom alt-font"
-                                >4th Generation Smart Door Lock line up <br class="mobile" />with patented Blinklock
-                                Mortise</span
-                            >
-                            <!-- end sub title -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- end page title section -->
-            <div id="container">
-                <div id="contents">
-                    <!-- 컨텐츠 끝 -->
-                </div>
+                </section>
+                <!-- 컨텐츠 끝 -->
             </div>
-
-            <!--#include file="./_footer.html"-->
         </div>
-    </body>
+
+        <!--#include file="./_footer.html"-->
+    </div>
+</body>
+
 </html>
