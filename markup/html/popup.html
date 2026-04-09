@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popup" style="width: 960px">
+                <div class="popHead">
+                    <p class="popTitle">테넌트 생성</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>테넌트 정보</h3>
+                            </div>
+                        </div>
+                        <div class="formArea">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>테넌트명<span class="req">*</span></dt>
+                                        <dd>
+                                            <div class="inputBox">
+                                                <input type="text" class="sm" placeholder="테넌트명 입력" />
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>사용기간<span class="req">*</span></dt>
+                                        <dd>
+                                            <div class="datepickerWrap" style="width: 278px">
+                                                <div>
+                                                    <input type="text" value="2025-01-22" class="datepicker sm" />
+                                                </div>
+                                                <span>-</span>
+                                                <div>
+                                                    <input type="text" value="2025-01-23" class="datepicker sm" />
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Prefix ID<span class="req">*</span></dt>
+                                        <dd>
+                                            <div class="inputBox">
+                                                <input type="text" class="sm" placeholder="Prefix ID 입력" />
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>담당자 등록</h3>
+                            </div>
+                            <div class="btnBox">
+                                <a href="javascript:;" class="btn outline xs">담당자 추가</a>
+                            </div>
+                        </div>
+                        <div class="tblList" style="height: 176px">
+                            <table>
+                                <caption>
+                                    담당자 등록
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 50px" />
+                                    <col style="width: 330px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>삭제</th>
+                                        <th>이름<span class="req">*</span></th>
+                                        <th>Prefix ID</th>
+                                        <th>Suffix ID<span class="req">*</span></th>
+                                        <th>비밀번호<span class="req">*</span></th>
+                                        <th>연락처</th>
+                                        <th>이메일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

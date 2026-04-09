@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+        <link rel="stylesheet" href="../assets/css/vb/defult.css" />
+        <style>
+            section.small-screen {
+                background: url(../assets/img/customer_banner03.jpg) no-repeat center;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap" class="manusl-detail">
+            <!-- start page title section -->
+            <section class="p-0 small-screen position-relative wow top-space">
+                <div class="bg-extra-dark-gray z-index-0"></div>
+                <div class="container position-relative">
+                    <div class="row align-items-center">
+                        <div
+                            class="col-12 small-screen d-flex flex-column justify-content-center page-title-large text-center"
+                        >
+                            <!-- start page title -->
+                            <h1
+                                class="alt-font text-extra-dark-gray font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0"
+                            >
+                                Customer Center
+                            </h1>
+                            <!-- end page title -->
+                            <!-- start sub title -->
+                            <span
+                                class="d-block font-size-20 sm-font-size-18 text-extra-dark-gray text-333 margin-5px-top alt-font"
+                                >We provide innovative solutions <br class="mobile" />to expand business</span
+                            >
+                            <!-- end sub title -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end page title section -->
+            <div id="container">
+                <div id="contents">
+                    <!-- 컨텐츠 시작 -->
+                    <section class="sec_content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="xans-board-readpackage">
+                                    <div class="ec-base-table typeWrite">
+                                        <table border="0" summary="">
+                                            <caption>
+                                                Board Detail
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width: 100%" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr class="title">
+                                                    <td>
+                                                        <h3 title="제품 설명서 제목">
+                                                            A2120H & 제이드락 (JADELOCK) & 제스퍼(JASPER)
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                                <tr class="content">
+                                                    <td>
+                                                        <div class="detail">
+                                                            <div class="fr-view fr-view-article">
+                                                                <p>
+                                                                    <img
+                                                                        src="../assets/img/manual/pushpull/jadelock_jasper.jpg"
+                                                                        class="fr-fic fr-dib"
+                                                                        result="success"
+                                                                        name="ARK_A1120W_A2120H_2.jpg"
+                                                                        size="1000px/1000px"
+                                                                        filesize="140,18 kB"
+                                                                        error=""
+                                                                    />
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="attach">
+                                                    <td class="attachFile">
+                                                        <a
+                                                            id="manual-download-btn"
+                                                            href="#"
+                                                            download
+                                                            class="btn-large btn"
+                                                        >
+                                                            Download Manual
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 컨텐츠 끝 -->
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // 1. URL 파라미터 가져오기 (?id=a2120h)
+                const urlParams = new URLSearchParams(window.location.search);
+                const manualId = urlParams.get('id');
+
+                // 2. 외부 JSON 파일(fetch) 대신, 테스트를 위해 데이터를 내부에 직접 선언
+                const manualData = [
+                    {
+                        id: 'a2120h',
+                        title: 'A2120H & 제이드락 (JADELOCK) & 제스퍼(JASPER)',
+                        imgSrc: '../assets/img/manual/pushpull/jadelock_jasper.jpg',
+                        downloadLink:
+                            'https://keyin.cafe24.com/exec/front/Board/download/?no=356&realname=2025/03/24/595193e07cfdf50a9366fb6027949d2a.pdf',
+                        downloadFileName: '온라인_매뉴얼.pdf',
+                    },
+                    {
+                        id: 'kdl101b',
+                        title: 'kdl101b (JADELOCK) & 제스퍼(JASPER)',
+                        imgSrc: '../assets/img/manual/pushpull/jadelock_jasper.jpg',
+                        downloadLink:
+                            'https://keyin.cafe24.com/exec/front/Board/download/?no=355&realname=2025/03/24/51cf7f67e6ba9c7b1d1367c7cdc70776.pdf&filename=A1120W_온라인 매뉴얼_241220.pdf',
+                        downloadFileName: '온라인_매뉴얼.pdf',
+                    },
+                ];
+
+                let targetManual;
+
+                // 3. 데이터 매칭
+                if (manualId) {
+                    targetManual = manualData.find(item => String(item.id) === manualId);
+                } else {
+                    [targetManual] = manualData; // id값이 없으면 첫번째 데이터 강제 적용
+                }
+
+                // 4. 화면에 값 넣기
+                if (targetManual) {
+                    const titleElement = document.getElementById('manual-title');
+                    const imageElement = document.getElementById('manual-image');
+                    const downloadBtn = document.getElementById('manual-download-btn');
+
+                    if (titleElement) titleElement.textContent = targetManual.title;
+                    if (imageElement) {
+                        imageElement.src = targetManual.imgSrc;
+                        imageElement.alt = targetManual.title;
+                    }
+                    if (downloadBtn) {
+                        // 여기에 데이터의 다운로드 링크가 정확히 꽂힙니다.
+                        downloadBtn.href = targetManual.downloadLink;
+                        downloadBtn.download = targetManual.downloadFileName;
+                    }
+                } else {
+                    // eslint-disable-next-line no-alert
+                    alert('해당 제품의 매뉴얼 정보가 없습니다.');
+                }
+            });
+        </script>
+    </body>
+</html>

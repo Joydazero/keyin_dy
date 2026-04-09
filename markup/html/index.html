@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+    </head>
+
+    <body>
+        <!--#include file="./_header.html"-->
+
+        <style>
+            .main-slide .swiper-slide .cover-background {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+                height: 0;
+                z-index: -1;
+                overflow: hidden;
+            }
+
+            .main-slide .swiper-slide .cover-background iframe.mainVisualVideo {
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .main-slide .swiper-slide .text-wrap {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .main-slide .swiper-slide .text-wrap * {
+                text-shadow: 1px 1px 5px #000;
+            }
+
+            .main-slide .swiper-slide .text-wrap .btn-dual a:hover {
+                text-shadow: none;
+            }
+
+            @media screen and (max-width: 767px) {
+                .main-slide .swiper-slide .cover-background {
+                    padding-bottom: calc(100vh - 93px);
+                }
+
+                .main-slide .swiper-slide .cover-background .htms-video {
+                    width: 100%;
+                }
+            }
+        </style>
+        <!-- start slider section -->
+        <section class="p-0 wow top-space main-slide">
+            <div
+                class="swiper-container full-screen white-move md-landscape-h-580px"
+                data-slider-options='{ "loop": false, "slidesPerView": "1", "allowTouchMove":true, "autoplay": { "delay": 44000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true } }'
+            >
+                <div class="swiper-wrapper">
+                    <!-- start slider item -->
+                    <div class="swiper-slide" style="cursor: auto">
+                        <div class="container h-100 text-wrap">
+                            <div class="row h-100">
+                                <div class="col-12 d-flex justify-content-center flex-column text-center">
+                                    <h1
+                                        class="alt-font text-white font-weight-700 letter-spacing-minus-1 line-height-80 w-55 center-col margin-35px-bottom lg-w-60 md-w-70 lg-line-height-auto sm-w-100 sm-margin-15px-bottom"
+                                    >
+                                        Keyin Your Life
+                                    </h1>
+                                    <p
+                                        class="text-light-gray margin-four-tb center-col w-40 lg-w-50 md-w-60 sm-w-100 sm-margin-15px-bottom padding-10px-top font-size-20"
+                                    >
+                                        당신의 삶을 <span style="color: #fc5000">Keyin</span> 하세요.
+                                    </p>
+                                    <div class="btn-dual margin-50px-top sm-margin-20px-top">
+                                        <a
+                                            href="/brand.html"
+                                            target="_self"
+                                            class="btn btn-large btn-transparent-white margin-20px-lr sm-margin-5px-top"
+                                            >Detail view</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cover-background">
+                            <!-- start HTML5 video -->
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                class="htms-video pc"
+                                poster="images/maintenance-bg.jpg"
+                            >
+                                <source
+                                    type="video/mp4"
+                                    src="https://lisacombined.com/wp-content/uploads/2024/11/keyin_main_video_kr04.mp4"
+                                />
+                            </video>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                class="htms-video mobile"
+                                poster="images/maintenance-bg.jpg"
+                            >
+                                <source
+                                    type="video/mp4"
+                                    src="https://lisacombined.com/wp-content/uploads/2024/11/mo-keyin_main_video_kr04.mp4"
+                                />
+                            </video>
+                            <!--iframe class="mainVisualVideo" src="https://www.youtube.com/embed/2cyvZxxM2ms?autoplay=1&loop=1&playlist=2cyvZxxM2ms&amp;controls=0&mute=1&modestbranding=1" title="KEYIN LX 영상" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+                            <!-- end HTML5 video -->
+                            <script>
+                                const videos = document.querySelectorAll('video');
+
+                                const observer = new IntersectionObserver(entries => {
+                                    entries.forEach(entry => {
+                                        const video = entry.target;
+                                        if (entry.isIntersecting) {
+                                            video.play();
+                                        } else {
+                                            video.pause();
+                                        }
+                                    });
+                                });
+
+                                videos.forEach(video => observer.observe(video));
+
+                                const video = document.querySelector('video');
+                                video.play().catch(error => {
+                                    console.error('자동 재생 실패:', error);
+                                    // 실패 시 처리 (예: 사용자 클릭 요청 메시지 표시)
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!-- end slider item -->
+                </div>
+
+                <!--div class="swiper-pagination swiper-pagination-white"></div>
+                
+                <div class="swiper-button-next light"><i class="ti-angle-right"></i></div>
+                <div class="swiper-button-prev light"><i class="ti-angle-left"></i></div-->
+            </div>
+        </section>
+        <!-- end slider section -->
+
+        <!-- start portfolio section -->
+        <section class="wow animate__fadeIn">
+            <div class="padding-ten-lr sm-padding-four-lr" module="product_listmain_1">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
+                        <p class="alt-font text-uppercase letter-spacing-3 font-size-22">Best Seller</p>
+                        <h4 class="alt-font font-weight-600 margin-15px-bottom letter-spacing-1">KEYIN 인기상품</h4>
+                        <span class="text-666">가장 많이 선택 받은 믿음직한 도어락</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 sm-no-padding filter-content overflow-hidden vb-product">
+                        <ul
+                            class="hover-option6 lightbox-portfolio portfolio-wrapper grid grid-4col xl-grid-4col lg-grid-4col md-grid-2col sm-grid-2col xs-grid-2col gutter-medium"
+                            style="position: relative; height: 510.656px"
+                        >
+                            <li class="grid-sizer">
+                                <!--
+                                    $count = 4
+
+                                    $basket_result = /product/add_basket.html
+                                    $basket_option = /product/basket_option.html
+                                -->
+                                <!-- start portfolio-item item -->
+                            </li>
+                            <li
+                                id="anchorBoxId_27"
+                                class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-"
+                                style="
+                                    position: absolute;
+                                    left: 0%;
+                                    top: 0px;
+                                    animation: auto ease 0s 1 normal none running none;
+                                "
+                            >
+                                <figure class="thumbnail">
+                                    <div class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                        <a href="./keyin-detail.html" name="anchorBoxName_27"
+                                            ><img
+                                                src="//keyin.cafe24.com/web/product/big/202501/fad93526e3dba51c72ef940d96e334df.jpg"
+                                                id=""
+                                                alt=""
+                                                class="w-100 thumb"
+                                                data-no-retina=""
+                                        /></a>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box align-middle">
+                                                <div class="description portfolio-hover-content position-relative">
+                                                    <strong class="name_b"
+                                                        ><a href="./keyin-detail.html" class=""
+                                                            ><span
+                                                                class=""
+                                                                style="
+                                                                    font-size: 20px;
+                                                                    color: #333333;
+                                                                    font-weight: bold;
+                                                                "
+                                                                >Keyin L 알파 플러스</span
+                                                            ></a
+                                                        ></strong
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+
+                            <!-- start portfolio-item item -->
+                            <li
+                                id="anchorBoxId_24"
+                                class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-"
+                                style="
+                                    position: absolute;
+                                    left: 24.9999%;
+                                    top: 0px;
+                                    animation: auto ease 0s 1 normal none running none;
+                                "
+                            >
+                                <figure class="thumbnail">
+                                    <div class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                        <a href="./keyin-detail.html" name="anchorBoxName_24"
+                                            ><img
+                                                src="//keyin.cafe24.com/web/product/big/202501/3d76967f76df70c8c21e884be5c0ebc6.jpg"
+                                                id=""
+                                                alt=""
+                                                class="w-100 thumb"
+                                                data-no-retina=""
+                                        /></a>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box align-middle">
+                                                <div class="description portfolio-hover-content position-relative">
+                                                    <strong class="name_b"
+                                                        ><a href="./keyin-detail.html" class=""
+                                                            ><span
+                                                                class=""
+                                                                style="
+                                                                    font-size: 20px;
+                                                                    color: #333333;
+                                                                    font-weight: bold;
+                                                                "
+                                                                >Keyin LX</span
+                                                            ></a
+                                                        ></strong
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+
+                            <!-- start portfolio-item item -->
+                            <li
+                                id="anchorBoxId_25"
+                                class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-"
+                                style="
+                                    position: absolute;
+                                    left: 49.9998%;
+                                    top: 0px;
+                                    animation: auto ease 0s 1 normal none running none;
+                                "
+                            >
+                                <figure class="thumbnail">
+                                    <div class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                        <a href="./keyin-detail.html" name="anchorBoxName_25"
+                                            ><img
+                                                src="//keyin.cafe24.com/web/product/big/202411/b8cb912c572922fbcfa47727ad22728c.jpg"
+                                                id=""
+                                                alt=""
+                                                class="w-100 thumb"
+                                                data-no-retina=""
+                                        /></a>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box align-middle">
+                                                <div class="description portfolio-hover-content position-relative">
+                                                    <strong class="name_b"
+                                                        ><a href="./keyin-detail.html" class=""
+                                                            ><span
+                                                                class=""
+                                                                style="
+                                                                    font-size: 20px;
+                                                                    color: #333333;
+                                                                    font-weight: bold;
+                                                                "
+                                                                >Keyin HA</span
+                                                            ></a
+                                                        ></strong
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li
+                                id="anchorBoxId_18"
+                                class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-"
+                                style="
+                                    position: absolute;
+                                    left: 74.9998%;
+                                    top: 0px;
+                                    animation: auto ease 0s 1 normal none running none;
+                                "
+                            >
+                                <figure class="thumbnail">
+                                    <div class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                        <a href="./keyin-detail.html" name="anchorBoxName_18"
+                                            ><img
+                                                src="//keyin.cafe24.com/web/product/big/202412/cedbffbb833b00b290512e8daca72efb.jpg"
+                                                id=""
+                                                alt=""
+                                                class="w-100 thumb"
+                                                data-no-retina=""
+                                        /></a>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box align-middle">
+                                                <div class="description portfolio-hover-content position-relative">
+                                                    <strong class="name_b"
+                                                        ><a href="./keyin-detail.html" class=""
+                                                            ><span
+                                                                class=""
+                                                                style="
+                                                                    font-size: 20px;
+                                                                    color: #333333;
+                                                                    font-weight: bold;
+                                                                "
+                                                                >Keyin S</span
+                                                            ></a
+                                                        ></strong
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="no-padding" style="background: #121212">
+            <figure class="container">
+                <img src="./assets/img/upload/raonarkBanner_pc02.jpg" alt="" width="100%" class="pc" /><img
+                    src="./assets/img/upload/raonarkBanner_mobile.jpg"
+                    alt=""
+                    width="100%"
+                    class="mobile"
+                />
+            </figure>
+        </section>
+
+        <style>
+            #keyin_series .tab-style2 .nav-tabs li a {
+                color: #222;
+            }
+            #keyin_series .tab-style2 .nav-tabs li a.active {
+                color: #fc5000;
+            }
+            @media screen and (max-width: 767px) {
+                #keyin_series .tab-style2 > .row > .col-12 {
+                    padding-right: 0px !important;
+                }
+
+                #keyin_series .tab-style2 .nav-tabs {
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    justify-content: flex-start !important;
+                }
+                #keyin_series .tab-style2 .nav-tabs::-webkit-scrollbar {
+                    display: none;
+                }
+                #keyin_series .tab-style2 .nav-tabs li {
+                    display: block;
+                    width: auto;
+                    margin: 0;
+                    margin-right: 30px;
+                    padding: 8px 0;
+                }
+                #keyin_series .tab-style2 .nav-tabs li a {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.2;
+                }
+                #keyin_series .tab-style2 .nav-tabs li a span {
+                    font-size: 50px !important;
+                }
+
+                #keyin_series .tab-style2 .tab-content {
+                    padding-top: 0;
+                    text-align: center;
+                }
+            }
+        </style>
+        <!-- start tabs section -->
+        <section class="wow animate__fadeIn" id="keyin_series">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-7 text-center margin-80px-bottom sm-margin-20px-bottom">
+                    <p class="alt-font text-uppercase letter-spacing-3 font-size-22">About KEYIN</p>
+                    <h4 class="alt-font font-weight-600 margin-15px-bottom letter-spacing-1">KEYIN SERIES</h4>
+                    <span class="text-666"
+                        >국내 최초 즉시 잠김 매커니즘이 적용된 <br class="mobile" />4세대 스마트도어락 라인업</span
+                    >
+                </div>
+            </div>
+            <div class="container tab-style2">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- tab navigation -->
+                        <ul class="nav nav-tabs alt-font text-small text-center font-weight-600 justify-content-center">
+                            <li class="nav-item">
+                                <a
+                                    href="#tab_sec1"
+                                    class="nav-link font-size-28 sm-font-size-24 active"
+                                    data-bs-toggle="tab"
+                                    >KeyinS</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab_sec2" class="nav-link font-size-28 sm-font-size-24" data-bs-toggle="tab"
+                                    >KeyinE</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab_sec3" class="nav-link font-size-28 sm-font-size-24" data-bs-toggle="tab"
+                                    >KeyinO</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab_sec4" class="nav-link font-size-28 sm-font-size-24" data-bs-toggle="tab"
+                                    >KeyinU</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab_sec5" class="nav-link font-size-28 sm-font-size-24" data-bs-toggle="tab"
+                                    >KeyinL</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab_sec6" class="nav-link font-size-28 sm-font-size-24" data-bs-toggle="tab"
+                                    >KeyinLX</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="#tab_secNon"
+                                    class="nav-link font-size-28 sm-font-size-24"
+                                    data-bs-toggle="tab"
+                                ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab_sec7" class="nav-link font-size-28 sm-font-size-24" data-bs-toggle="tab"
+                                    >KeyinHA</a
+                                >
+                            </li>
+                        </ul>
+                        <!-- tab end navigation -->
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <!-- start tab_sec1 content [KeyinS] -->
+                    <div class="tab-pane med-text fade show active" id="tab_sec1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img src="./assets/img/upload/main_KeyinS.jpg" class="w-100 sm-w-80" alt="KeyinS" />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 sm-font-size-28 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    Simple, Smart and Strong
+                                </div>
+                                <span
+                                    class="font-size-20 sm-font-size-16 font-weight-700 text-extra-dark-gray margin-20px-bottom sm-margin-10px-bottom d-block"
+                                    >0초, 닫으면 즉시 잠김</span
+                                >
+                                <p class="font-weight-400 text-666 margin-30px-bottom">
+                                    키인S의 즉시잠김 방식은 문을 완벽히 잠그는데<br />
+                                    단 1초의 틈도 허락하지 않습니다.<br />
+                                    모터 구동을 통해 잠금쇠가 돌출되는 방식이 아니기 때문이죠.<br />
+                                    키인S의 잠금쇠 설계 시 경사면을 두어 문이 닫히는 방향에 따라 미끄러짐과 동시에 문을
+                                    즉시 잠가주기 때문입니다.
+                                </p>
+                                <a
+                                    href="./keyin-detail.html"
+                                    class="font-size-14 sm-font-size-12 btn btn-black btn-large"
+                                    >구매하러 가기</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec1 content [KeyinS] -->
+
+                    <!-- start tab_sec2 content [KeyinE] -->
+                    <div class="tab-pane fade in" id="tab_sec2">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img src="./assets/img/upload/main_KeyinE.jpg" class="w-100 sm-w-80" alt="KeyinE" />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    Extend and Evolve
+                                </div>
+                                <span
+                                    class="font-size-20 sm-font-size-16 font-weight-700 text-extra-dark-gray margin-20px-bottom sm-margin-10px-bottom d-block"
+                                    >안전 한번 더 안전</span
+                                >
+                                <p class="font-weight-400 text-666 margin-30px-bottom">
+                                    KeyinE의 Plus LOCK은 문이 열린 상태에서도 안전을 보장하며, 외부 사용자에게는 쉽고
+                                    안전한 출입을 제공합니다.<br />기존의 안전 체인과는 비교할 수 없을 정도로 뛰어난
+                                    기능을 갖추고 있습니다. 아날로그 감성과 첨단 IoT 기술의 융합으로 탄생한 Plus LOCK은
+                                    스마트 도어락의 패러다임을 완전히 바꾸는 혁신적인 제품입니다.
+                                </p>
+                                <a
+                                    href="./keyin-detail.html"
+                                    class="font-size-14 sm-font-size-12 btn btn-black btn-large"
+                                    >구매하러 가기</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec2 content [KeyinE] -->
+
+                    <!-- start tab_sec3 content [KeyinO] -->
+                    <div class="tab-pane fade in" id="tab_sec3">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img
+                                        src="./assets/img/upload/main_KeyinNone.jpg"
+                                        class="w-100 sm-w-80"
+                                        alt="coming soon"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 sm-font-size-28 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    Coming Soon
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec3 content [KeyinO] -->
+
+                    <!-- start tab_sec4 content [KeyinU] -->
+                    <div class="tab-pane fade in" id="tab_sec4">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img
+                                        src="./assets/img/upload/main_KeyinNone.jpg"
+                                        class="w-100 sm-w-80"
+                                        alt="coming soon"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 sm-font-size-28 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    Coming Soon
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec4 content [KeyinU] -->
+
+                    <!-- start tab_sec5 content [KeyinL] -->
+                    <div class="tab-pane fade in" id="tab_sec5">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img src="./assets/img/upload/main_KeyinL.jpg" class="w-100 sm-w-80" alt="KeyinL" />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 sm-font-size-28 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    Motionless Lever handle
+                                </div>
+                                <span
+                                    class="font-size-20 sm-font-size-16 font-weight-700 text-extra-dark-gray margin-20px-bottom sm-margin-10px-bottom d-block"
+                                    >특허받은 Anchor&trade; 기술로 완성된 <br class="mobile" />완벽한 도어락</span
+                                >
+                                <p class="font-weight-400 text-666 margin-30px-bottom">
+                                    RAONARK의 플래그십 제품은 완전 자동 몰티스 기능을 통해 손잡이를 움직이지 않아도 문을
+                                    열 수 있는 혁신을 제공합니다.<br />
+                                    여기에 즉시 잠금, Plus Link 기능, 그리고 앱 연동까지 더해져 스마트한 사용 경험을
+                                    제공합니다.
+                                </p>
+                                <a
+                                    href="./keyin-detail.html"
+                                    class="font-size-14 sm-font-size-12 btn btn-black btn-large"
+                                    >구매하러 가기</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec5 content [KeyinL] -->
+
+                    <!-- start tab_sec6 content [KeyinLX] -->
+                    <div class="tab-pane fade in" id="tab_sec6">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img
+                                        src="./assets/img/upload/main_KeyinLX.jpg"
+                                        class="w-100 sm-w-80"
+                                        alt="KeyinLX"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 sm-font-size-28 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    New Generation<br />Ergonomic bar type<br />Motionless Smart Lock
+                                </div>
+                                <span
+                                    class="font-size-20 sm-font-size-16 font-weight-700 text-extra-dark-gray margin-20px-bottom sm-margin-10px-bottom d-block"
+                                    >잡고 연다.</span
+                                >
+                                <p class="font-weight-400 text-666 margin-30px-bottom">
+                                    RAONARK의 플래그십 제품은 유럽형(6068) 기준 가장 슬림한 스마트 도어락으로, 완전 자동
+                                    몰티스 기능을 통해 손잡이를 움직이지 않아도 문을 열 수 있습니다. Tuya Zigbee,
+                                    Matter, 447Mhz 원격 제어 솔루션을 지원하여 더욱 스마트한 경험을 제공합니다.
+                                </p>
+                                <a
+                                    href="./keyin-detail.html"
+                                    class="font-size-14 sm-font-size-12 btn btn-black btn-large"
+                                    >구매하러 가기</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec6 content [KeyinLX] -->
+
+                    <!-- start tab_sec7 content [KeyinHA] -->
+                    <div class="tab-pane fade in" id="tab_sec7">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <figure>
+                                    <img
+                                        src="./assets/img/upload/main_KeyinHa.jpg"
+                                        class="w-100 sm-w-80"
+                                        alt="KeyinHA"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
+                                <div
+                                    class="alt-font font-size-32 sm-font-size-28 font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase"
+                                >
+                                    Hybrid <br class="mobile" />No-Hole Lever Lock
+                                </div>
+                                <span
+                                    class="font-size-20 sm-font-size-16 font-weight-700 text-extra-dark-gray margin-20px-bottom sm-margin-10px-bottom d-block"
+                                    >인체공학적 핸들형 지문 인식 스마트 도어락</span
+                                >
+                                <p class="font-weight-400 text-666 margin-30px-bottom">
+                                    KeyinHA는 몰티스에 내장된 도어 위치 센서를 통해 손잡이를 조작하지 않아도 문이 닫히는
+                                    즉시 자동으로 안전하게 잠깁니다. 이제 문을 잠그기 위해 레버 핸들을 올릴 필요가
+                                    없습니다.
+                                </p>
+                                <a
+                                    href="./keyin-detail.html"
+                                    class="font-size-14 sm-font-size-12 btn btn-black btn-large"
+                                    >구매하러 가기</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab_sec7 content [KeyinHA] -->
+                </div>
+            </div>
+        </section>
+        <!-- end tabs section -->
+
+        <style>
+            .xans-smart-banner-admin-PC00002 {
+                display: none;
+            }
+            .xans-smart-banner-admin-PC00001,
+            .xans-smart-banner-admin-PC00002 {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .xans-smart-banner-admin-PC00001 *,
+            .xans-smart-banner-admin-PC00002 * {
+                transition-duration: 0s;
+            }
+            .xans-smart-banner-admin-PC00001 .smart-banner-wrapper.square .bx-pager,
+            .xans-smart-banner-admin-PC00002 .smart-banner-wrapper.square .bx-pager {
+                bottom: 10px;
+            }
+            @media (max-width: 992px) {
+                .xans-smart-banner-admin-PC00001 {
+                    display: none;
+                }
+                .xans-smart-banner-admin-PC00002 {
+                    display: block;
+                }
+            }
+        </style>
+        <section class="banner_section">
+            <div class="padding-ten-lr sm-padding-four-lr">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="https://file.cafe24cos.com/banner-admin-live/upload/keyin/4c3f4f85-adaa-4bb4-e497-b9fa9605f173.jpeg"
+                                alt="슬라이드1"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://file.cafe24cos.com/banner-admin-live/upload/keyin/30b4b9e2-7763-4ad5-c68c-c4f8fac8db81.jpeg"
+                                alt="슬라이드2"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://file.cafe24cos.com/banner-admin-live/upload/keyin/28c15f54-291e-4209-9daf-d5e0627d0fea.jpeg"
+                                alt="슬라이드3"
+                            />
+                        </div>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start portfolio section -->
+        <section class="wow animate__fadeIn">
+            <div class="padding-ten-lr sm-padding-four-lr" module="product_listmain_2">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
+                        <p class="alt-font text-uppercase letter-spacing-3 font-size-22">About ARK</p>
+                        <h4 class="alt-font font-weight-600 margin-15px-bottom letter-spacing-1">ARK SERIES</h4>
+                        <span class="text-666">핵심 기능과 품질에 집중한 스마트도어락 라인업</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 sm-no-padding filter-content overflow-hidden vb-product">
+                        <ul
+                            class="hover-option6 lightbox-portfolio portfolio-wrapper grid grid-4col xl-grid-4col lg-grid-4col md-grid-2col sm-grid-2col xs-grid-2col gutter-medium"
+                            style="position: relative; height: 790.885px"
+                        >
+                            <li class="grid-sizer">
+                                <!--
+                                        $count = 4
+                
+                                        $basket_result = /product/add_basket.html
+                                        $basket_option = /product/basket_option.html
+                                    -->
+
+                                <!-- start portfolio-item item -->
+                            </li>
+                            <li
+                                id="anchorBoxId_19"
+                                class="item grid-item last-paragraph-no-margin margin-50px-bottom sm-margin-30px-bottom xans-record-"
+                                style="
+                                    position: absolute;
+                                    left: 0%;
+                                    top: 0px;
+                                    animation: auto ease 0s 1 normal none running none;
+                                "
+                            >
+                                <figure class="thumbnail">
+                                    <!--div class="custom_pro " d-price="490000" d-custom="89000"></div-->
+                                    <div class="prdImg portfolio-img position-relative text-center overflow-hidden">
+                                        <a href="./ark-list.html" name="anchorBoxName_19"
+                                            ><img
+                                                src="//keyin.cafe24.com/web/product/medium/202501/ae4d75c40d5be4b19a771a21358e330a.jpg"
+                                                id="eListPrdImage19_3"
+                                                alt=""
+                                                class="w-100 thumb"
+                                                data-no-retina=""
+                                        /></a>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box align-middle">
+                                                <div class="description portfolio-hover-content position-relative">
+                                                    <!--div class="displaynone">
+                                            <div class="color" module="product_Colorchip">
+                                                <span class="chips" style="background-color:"></span><span class="chips" style="background-color:"></span>
+                                            </div>
+                                        </div-->
+                                                    <strong class="name_b"
+                                                        ><a href="./ark-list.html" class=""
+                                                            ><span class="" style="font-size: 12px; color: #111111"
+                                                                >ARK Amber</span
+                                                            ></a
+                                                        ></strong
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+
+                            <!-- start portfolio-item item -->
+                            <!-- end portfolio item -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* 전체 화면을 세 부분으로 나누는 섹션 */
+            .split-background-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                overflow: hidden;
+            }
+            /* 공통 배경 요소 */
+            .background {
+                position: relative;
+                width: 100%;
+                height: 100%; /* 높이를 화면의 1/3로 설정 */
+            }
+            /* 위쪽 이미지 */
+            .background-image {
+                height: 100%;
+                background: url('/_vb/images/main_bg05.png') no-repeat center center/cover;
+            }
+            /* 아래쪽 유튜브 영상 */
+            .background-video-wrapper {
+                position: relative;
+                max-width: 1200px;
+                padding-bottom: 26.5%;
+                margin: 0 auto;
+            }
+            .background-video-wrapper iframe {
+                pointer-events: none;
+            }
+            .background-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none; /* 유저가 영상과 상호작용하지 못하게 설정 */
+            }
+            /* 콘텐츠 영역 */
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                z-index: 1;
+            }
+            .content_p {
+                padding: 5% 0% 20%;
+            }
+            /* 기술적인 내용 스타일 */
+            .tech-info {
+                max-width: 800px;
+            }
+            /* 반응형 설정 */
+            @media (max-width: 768px) {
+                .split-background-section {
+                    height: auto;
+                }
+                .background {
+                    height: 30vh; /* 작은 화면에서는 높이를 줄임 */
+                }
+                .background-video-wrapper {
+                    overflow: hidden;
+                }
+                .content {
+                    height: auto; /* 중간 콘텐츠 영역의 높이를 늘림 */
+                }
+                .tech-info {
+                    padding: 15px;
+                }
+                .content_p {
+                    padding: 0% 0% 5% 0%;
+                }
+            }
+        </style>
+
+        <!-- 배경을 세 부분으로 나눈 섹션 -->
+        <section class="split-background-section bg-black" style="display: none">
+            <!-- 중간 콘텐츠 영역 -->
+            <div class="content margin-50px-bottom">
+                <div class="tech-info">
+                    <h4 class="font-weight-600 margin-15px-bottom">다양한 IoT<br />원격 서비스 통합</h4>
+                    <span class="text-ccc">
+                        자체 앱과 PLUS LINK 플랫폼을 통한 <br class="mobile" />디바이스 간 연결을 지원합니다.<br />
+                        또한, Zigbee와 Matter를 지원하여 <br class="mobile" />다른 디바이스와의 상호 운용성과 확장성을
+                        제공합니다.
+                    </span>
+                    <!--img src="/web/upload/keyinLx_set02.png" class="" alt="KeyinLX" style="text-align:center; width:60%; height:auto; padding-top:10%; margin-bottom:10%;" data-no-retina="">
+                <div>
+                    <p class="content_p font-size-30 sm-font-size-24">Bluetooth<br>BLE 5.0</p>
+                    <h5></h5>
+                </div-->
+                </div>
+            </div>
+
+            <!-- 아래쪽 유튜브 배경 영상 -->
+            <div class="background background-video-wrapper">
+                <iframe
+                    width="1280"
+                    height="720"
+                    src="https://www.youtube.com/embed/38Wbwv4BAGY?autoplay=1&mute=1&loop=1&playlist=38Wbwv4BAGY&controls=0&showinfo=0&modestbranding=1"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    class="background-video"
+                ></iframe>
+            </div>
+        </section>
+
+        <!--08 . 리뷰 -->
+        <style>
+            .blog-post .blog-post-images {
+                height: auto !important;
+            }
+
+            .post-details {
+                position: relative;
+            }
+
+            .post-details > a {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+
+            .post-details:hover .post-title {
+                color: #fc5000;
+            }
+
+            .post-title {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .reviewContent {
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                word-break: break-all;
+            }
+        </style>
+
+        <!-- start blog section -->
+        <section class="wow animate__fadeIn" style="background: #efefef">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 text-center margin-50px-bottom sm-margin-20px-bottom">
+                        <h4 class="alt-font text-111 font-weight-600 margin-15px-bottom letter-spacing-1">
+                            스토어 리뷰
+                        </h4>
+                        <div class="text-666 margin-30px-bottom">KEYIN의 리뷰를 확인하세요.</div>
+                        <a href="./review.html" class="btn btn-black btn-large align-top" target="_self">Read more</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="xans-element- xans-board xans-board-listpackage-4 xans-board-listpackage xans-board-4 col-12 blog-content"
+                    >
+                        <ul
+                            class="xans-element- xans-board xans-board-list-4 xans-board-list xans-board-4 blog-masonry blog-wrapper grid grid-loading grid-4col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-2col blog-post-style5 gutter-large"
+                        >
+                            <li class="grid-sizer">
+                                <!--
+                            $count = 8
+                            $product_name_cut = 30
+                            $login_page_url = /member/login.html
+                            $deny_access_url = /index.html
+                        -->
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=48&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin/2025/02/25/ace5783ced703d92b4fcee18ddb79bc8.jpg" alt=""  onclick="location.href='/board/p_review/read.html?no=48&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            지문인식도 빠르고 상품설명엔 없지...
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by s_mi******&nbsp;&nbsp;|&nbsp;&nbsp;2025-02-16 14:18:56</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            지문인식도 빠르고 상품설명엔 없지만 카드키가 총 4개 들어있습니다. 그런데
+                                            피치못하게 숫자키를 눌러야 하는 상황에서는 배열이 익숙치 않아
+                                            불편하네요.(2025-02-16 14:18 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=49&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin///" alt=""  onclick="location.href='/board/p_review/read.html?no=49&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            사용이 편리하고 아이(7살)가 쓰...
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by circ******&nbsp;&nbsp;|&nbsp;&nbsp;2025-01-30 22:41:50</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            사용이 편리하고 아이(7살)가 쓰기좋아요~~지문인식하고 바로 당기면 문이 열려서
+                                            좋은거같아요(2025-01-30 22:41 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=50&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin/2025/02/25/c0841a49c901cbff5369fdfade57a00b.jpg" alt=""  onclick="location.href='/board/p_review/read.html?no=50&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            아주아주 만족합니다!!
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by thdu***&nbsp;&nbsp;|&nbsp;&nbsp;2025-01-16 22:11:56</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            아주아주 만족합니다!!(2025-01-16 22:11 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=51&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin///" alt=""  onclick="location.href='/board/p_review/read.html?no=51&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            반응속도 좋고,이중잠금 좋고!! ...
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by ggwa***&nbsp;&nbsp;|&nbsp;&nbsp;2025-01-14 13:30:18</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            반응속도 좋고,이중잠금 좋고!! 값어치를 충분히 하는 제품입니다.(2025-01-14
+                                            13:30 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=52&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin/2025/02/25/0171eae4ad45baa3b0e7a351679b3091.jpg" alt=""  onclick="location.href='/board/p_review/read.html?no=52&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            배송즉시 설치가 너무 좋았습니다 ...
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by inte*****&nbsp;&nbsp;|&nbsp;&nbsp;2025-01-06 13:41:31</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            배송즉시 설치가 너무 좋았습니다 별도 로스없이 깔끔한 시공까지
+                                            감사듯닙니다(2025-01-06 13:41 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point4.png" alt="4점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=53&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin/2025/02/25/2e9d79f9870918a1c811a57c2d49ba3a.jpg" alt=""  onclick="location.href='/board/p_review/read.html?no=53&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            블루투스연동 잘되고 현재로써는 문...
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by feis*****&nbsp;&nbsp;|&nbsp;&nbsp;2025-01-03 21:57:01</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            블루투스연동 잘되고 현재로써는 문제가없어요(2025-01-03 21:57
+                                            스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=54&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin/2025/02/25/d290a34a18cc81c7aa3da4791909d336.jpg" alt=""  onclick="location.href='/board/p_review/read.html?no=54&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            지문으로하니 편하고 좋아요. 배송...
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by akwo*****&nbsp;&nbsp;|&nbsp;&nbsp;2025-01-03 21:02:47</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            지문으로하니 편하고 좋아요. 배송 도착하고 설치기사님이 바로 연락와서
+                                            빠른설치해서 좋았습니다^^(2025-01-03 21:02 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-item last-paragraph-no-margin xans-record-">
+                                <div class="blog-post">
+                                    <!--div class="blog-post-images overflow-hidden">
+                <a href="/board/p_review/read.html?no=55&board_no=4"><img src="//keyin.cafe24.com/file_data/keyin///" alt=""  onclick="location.href='/board/p_review/read.html?no=55&board_no=4';"/></a>
+            </div-->
+                                    <div
+                                        class="post-details padding-30px-all bg-white md-padding-20px-all"
+                                        style="border-radius: 15px"
+                                    >
+                                        <a href="#none" class="reviewPage"></a>
+                                        <div class="blog-hover-color"></div>
+                                        <div
+                                            class="alt-font post-title font-weight-700 text-extra-dark-gray w-90 d-block lg-w-100 margin-5px-bottom"
+                                        >
+                                            좋아욪감사합니다..
+                                        </div>
+                                        <!--div class="author">
+                    <span class="text-medium-gray text-uppercase text-extra-small d-inline-block">by sc****&nbsp;&nbsp;|&nbsp;&nbsp;2024-12-31 22:34:13</span>
+                </div-->
+                                        <div
+                                            class="separator-line-horrizontal-full bg-medium-gray margin-five-tb lg-margin-four-tb"
+                                        ></div>
+                                        <p class="overflow-hidden font-size-16 sm-font-size-14 reviewContent">
+                                            좋아욪감사합니다..(2024-12-31 22:34 스마트스토어에서 등록된 구매평)
+                                        </p>
+                                        <p class="margin-10px-top">
+                                            <img src="./assets/img/upload/ico_point5.png" alt="5점" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end blog section -->
+
+        <!--06. Iot 기술설명.ver02 -->
+        <style>
+            #pluslink_wrap {
+                width: 100%;
+                padding: 20px 0;
+            }
+            #pluslink_wrap figure {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            #pluslink_wrap figure img {
+                width: 100%;
+            }
+            #pluslink_wrap ul {
+                max-width: 1100px;
+                width: 96%;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #pluslink_wrap ul li {
+                text-align: center;
+                width: calc(100% / 6);
+            }
+            #pluslink_wrap ul li img {
+                height: 80px;
+            }
+
+            @media screen and (max-width: 992px) {
+                #pluslink_wrap {
+                    height: auto;
+                }
+                #pluslink_wrap ul {
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    padding: 50px 0 30px;
+                }
+                #pluslink_wrap ul li {
+                    width: 33.3333%;
+                }
+                #pluslink_wrap ul li img {
+                    height: 60px;
+                }
+            }
+        </style>
+
+        <section class="wow animate__fadeIn md-padding-50px-top" style="word-break: keep-all">
+            <div class="container-fluid padding-ten-lr sm-padding-four-lr">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 text-center margin-50px-bottom sm-margin-40px-bottom">
+                        <h4 class="alt-font text-111 font-weight-600 margin-15px-bottom letter-spacing-1">
+                            IoT 서비스<br />Keyin 스마트 커넥션
+                        </h4>
+                        <div class="text-666 margin-30px-bottom">
+                            “잘 열어주고 잠궈주는 것” <br class="mobile" />이것만이 Lock이 제공할 수 있는 유일한
+                            가치일까요?<br />
+                            Keyin의 스마트 커넥션 서비스는 <br class="mobile" />아래와 같은 고민에서 시작되었습니다.<br />
+                            애플리케이션을 다운받고 몇 가지 간단한 연동 과정만 거친다면 훨씬 더 확장된 가치를 경험하실
+                            수 있습니다.
+                        </div>
+                        <a href="./iot-service.html" class="btn btn-black btn-large align-top" target="_self"
+                            >Read more</a
+                        >
+                    </div>
+                </div>
+                <div id="pluslink_wrap">
+                    <ul>
+                        <li class="sm-margin-30px-bottom">
+                            <img
+                                class="margin-20px-bottom"
+                                src="./assets/img/upload/pluslink_big01_black.svg"
+                                alt="스마트 알람"
+                            />
+                            <div class="font-weight-500">스마트 알람</div>
+                        </li>
+                        <li class="sm-margin-30px-bottom">
+                            <img
+                                class="margin-20px-bottom"
+                                src="./assets/img/upload/pluslink_big02_black.svg"
+                                alt="스마트 오토 오픈"
+                            />
+                            <div class="font-weight-500">스마트 오토 오픈</div>
+                        </li>
+                        <li class="sm-margin-30px-bottom">
+                            <img
+                                class="margin-20px-bottom"
+                                src="./assets/img/upload/pluslink_big03_black.svg"
+                                alt="원터치 키 발급"
+                            />
+                            <div class="font-weight-500">원터치 키 발급</div>
+                        </li>
+                        <li>
+                            <img
+                                class="margin-20px-bottom"
+                                src="./assets/img/upload/pluslink_big04_black.svg"
+                                alt="디바이스 이벤트"
+                            />
+                            <div class="font-weight-500">디바이스 이벤트</div>
+                        </li>
+                        <li>
+                            <img
+                                class="margin-20px-bottom"
+                                src="./assets/img/upload/pluslink_big05_black.svg"
+                                alt="간편한 설정"
+                            />
+                            <div class="font-weight-500">간편한 설정</div>
+                        </li>
+                        <li>
+                            <img
+                                class="margin-20px-bottom"
+                                src="./assets/img/upload/pluslink_big06_black.svg"
+                                alt="통합관리"
+                            />
+                            <div class="font-weight-500">통합관리</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="wow animate__fadeIn bg-black"
+            id="mediaWrap"
+            style="visibility: visible; animation-name: fadeIn"
+        >
+            <div class="padding-ten-lr sm-padding-four-lr">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 text-center margin-80px-bottom sm-margin-20px-bottom">
+                        <h4 class="alt-font font-weight-600 margin-15px-bottom letter-spacing-1" style="color: #fff">
+                            KEYIN 소식
+                        </h4>
+                        <div class="text-ccc margin-30px-bottom">다양한 키인의 소식을 확인하세요.</div>
+                        <a
+                            href="/customer_center/media.html"
+                            class="btn btn-white btn-transparent-white btn-large align-top"
+                            target="_self"
+                            style="display: none"
+                            >Read more</a
+                        >
+                    </div>
+                </div>
+
+                <div class="xans-element- xans-board xans-board-listpackage-8 xans-board-listpackage xans-board-8">
+                    <div
+                        class="xans-element- xans-board xans-board-list-8 xans-board-list xans-board-8 dj-mov-top-bottom2"
+                    >
+                        <!--
+                        $count = 3
+                        $login_page_url = /member/login.html
+                        $deny_access_url = /index.html
+                    -->
+                        <ul>
+                            <li class="xans-record-">
+                                <a
+                                    href="https://www.asiae.co.kr/article/2024081213551107971"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="imgLink"
+                                    ><img
+                                        src="//keyin.cafe24.com/file_data/keyin/gallery/2024/11/21/6e1e680e26305225c642d1c25d8c9857.jpg"
+                                        onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'"
+                                        alt=""
+                                        data-no-retina=""
+                                /></a>
+                                <a
+                                    href="https://www.asiae.co.kr/article/2024081213551107971"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="imgLink d-block text-fff"
+                                    >라오나크, ‘2024 아기유니콘’ 선정
+                                </a>
+                            </li>
+                            <li class="xans-record-">
+                                <a
+                                    href="https://www.fnnews.com/news/202408091347296334"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="imgLink"
+                                    ><img
+                                        src="//keyin.cafe24.com/file_data/keyin/gallery/2024/11/21/9f745a7b05e23ee5e4594bdc7498c014.jpg"
+                                        onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'"
+                                        alt=""
+                                        data-no-retina=""
+                                /></a>
+                                <a
+                                    href="https://www.fnnews.com/news/202408091347296334"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="imgLink d-block text-fff"
+                                    >㈜라오나크, ‘2024 아기유니콘’ 선정
+                                </a>
+                            </li>
+                            <li class="xans-record-">
+                                <a
+                                    href="https://www.dailian.co.kr/news/view/1393926/?sc=Naver"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="imgLink"
+                                    ><img
+                                        src="//keyin.cafe24.com/file_data/keyin/gallery/2024/11/21/b3db0b4314007b7df85866ee823638d7.jpg"
+                                        onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'"
+                                        alt=""
+                                        data-no-retina=""
+                                /></a>
+                                <a
+                                    href="https://www.dailian.co.kr/news/view/1393926/?sc=Naver"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="imgLink d-block text-fff"
+                                    >㈜라오나크, '2024 아기유니콘' 선정
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--#include file="./_footer.html"-->
+    </body>
+</html>

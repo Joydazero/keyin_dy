@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+        <link rel="stylesheet" href="../assets/css/vb/defult.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <!--#include file="./_header.html"-->
+            <div id="container">
+                <div id="contents">
+                    <!-- content Start -->
+                    <style>
+                        section.small-screen {
+                            background: url('../assets/img/portfolio_banner01.jpg') no-repeat center;
+                            background-size: cover;
+                            box-sizing: content-box;
+                        }
+
+                        #mapWrap {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        #mapWrap > div:first-child {
+                            border-radius: 15px;
+                            overflow: hidden;
+                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                        }
+                        #mapWrap > div:last-child {
+                            background: #fff;
+                            padding: 15px 20px;
+                            border-radius: 15px;
+                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.02);
+                        }
+
+                        #map .MapStoreInfo {
+                            width: 400px;
+                            padding: 10px 15px;
+                            word-break: keep-all;
+                        }
+
+                        input[type='text']#searchInput {
+                            width: 100%;
+                            min-width: 300px;
+                            height: 45px;
+                            line-height: 45px;
+                            padding: 0 8px;
+                            font-size: 20px;
+                            border-color: #333;
+                            margin-bottom: 5px;
+                            border-width: 0 0 1px 0;
+                        }
+                        #storeList {
+                            height: calc(100% - 75px);
+                            box-sizing: border-box;
+                            overflow-y: auto;
+                            border-top: 1px solid #ccc;
+                        }
+                        #storeList::-webkit-scrollbar {
+                            width: 3px;
+                            background: #efefef;
+                        }
+                        #storeList::-webkit-scrollbar-thumb {
+                            background: #999;
+                            border-radius: 100px;
+                        }
+
+                        #storeList > li {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding: 0 10px;
+                            word-break: keep-all;
+                            border-bottom: 1px solid #ccc;
+                            cursor: pointer;
+                        }
+                        #storeList > li.on,
+                        #storeList > li:hover {
+                            background: #f9f9fb;
+                        }
+                        #storeList > li > span.storeName {
+                            width: 150px;
+                            padding: 20px 0;
+                        }
+                        #storeList > li > span.storeName img {
+                            height: 20px;
+                            vertical-align: top;
+                            margin-top: 3px;
+                            margin-right: 8px;
+                            opacity: 0.4;
+                        }
+                        #storeList > li > span.storeAddress {
+                            width: calc(100% - 290px);
+                            padding: 20px 0;
+                        }
+                        #storeList > li > span.storePhone {
+                            width: 140px;
+                            text-align: right;
+                            padding: 20px 0;
+                        }
+
+                        @media (max-width: 992px) {
+                            .small-screen {
+                                height: 200px;
+                            }
+                            section.small-screen {
+                                background-position: 60% center;
+                            }
+
+                            #map .MapStoreInfo {
+                                width: 250px;
+                            }
+
+                            input[type='text']#searchInput {
+                                font-size: 18px;
+                            }
+
+                            #storeList {
+                                border-color: #999;
+                            }
+                            #storeList > li {
+                                border-color: #999;
+                            }
+                            #storeList > li {
+                                padding: 0 15px;
+                            }
+                            #storeList > li > span.storeName {
+                                order: 1;
+                                width: 100%;
+                                padding: 10px 0;
+                                margin-bottom: 10px;
+                                position: relative;
+                                border-bottom: 1px solid #efefef;
+                            }
+                            #storeList > li > span.storeName img {
+                                margin-top: 2px;
+                                margin-right: 5px;
+                            }
+                            #storeList > li > span.storeAddress {
+                                order: 3;
+                                width: 100%;
+                                padding: 0 0 10px;
+                            }
+                            #storeList > li > span.storePhone {
+                                order: 2;
+                                width: 100%;
+                                border: 0;
+                                padding: 0;
+                                margin-top: -39px;
+                            }
+                        }
+                    </style>
+
+                    <!-- start page title section -->
+                    <section class="p-0 small-screen position-relative wow animate__fadeIn top-space">
+                        <div class="container position-relative">
+                            <div class="row align-items-center">
+                                <div
+                                    class="col-12 small-screen d-flex flex-column justify-content-center page-title-large text-center"
+                                >
+                                    <!-- start page title -->
+                                    <h1
+                                        class="alt-font text-extra-dark-gray font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0"
+                                    >
+                                        대리점 찾기
+                                    </h1>
+                                    <!-- end page title -->
+                                    <!-- start sub title -->
+                                    <span
+                                        class="d-block font-size-20 sm-font-size-18 text-extra-dark-gray text-333 margin-5px-top alt-font"
+                                        >We provide innovative solutions <br class="mobile" />to expand business</span
+                                    >
+                                    <!-- end sub title -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end page title section -->
+                    <section calss="big-section" style="background: #f8f8f8">
+                        <div class="container">
+                            <div id="mapWrap">
+                                <div class="w-45 sm-w-100 sm-margin-30px-bottom">
+                                    <div id="map" class="w-100 h-500px sm-h-250px"></div>
+                                    <script
+                                        type="text/javascript"
+                                        src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=rldmgdfkds"
+                                    ></script>
+                                </div>
+                                <div class="w-50 sm-w-100 h-500px">
+                                    <input
+                                        id="searchInput"
+                                        type="text"
+                                        placeholder="대리점 이름을 검색하세요"
+                                        oninput="filterStores()"
+                                    />
+                                    <ul id="storeList"></ul>
+                                </div>
+                            </div>
+                            <script src="../assets/js/storeList.js"></script>
+                        </div>
+                    </section>
+
+                    <!-- content End -->
+                </div>
+            </div>
+            <!--#include file="./_footer.html"-->
+        </div>
+    </body>
+</html>

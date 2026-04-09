@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+        <link rel="stylesheet" href="../assets/css/vb/defult.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <!--#include file="./_header.html"-->
+            <div id="container">
+                <div id="contents">
+                    <!-- content Start -->
+                    <style>
+                        section.small-screen {
+                            background: url('../assets/img/technology_banner03.jpg') no-repeat center;
+                            background-size: cover;
+                            padding-bottom: 60px !important;
+                            box-sizing: content-box;
+                        }
+
+                        #iotPluslink_img_wrap {
+                            background: url('../assets/img/iotPluslink_bg02.jpg') no-repeat center;
+                            background-size: cover;
+                            padding: 50px 0;
+                            border-radius: 20px;
+                        }
+                        #iotPluslink_img_wrap ul {
+                            max-width: 1100px;
+                            width: 96%;
+                            height: 100%;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        #iotPluslink_img_wrap ul li {
+                            text-align: center;
+                            width: calc(100% / 6);
+                        }
+                        #iotPluslink_img_wrap ul li img {
+                            height: 80px;
+                        }
+
+                        .iotPluslink_wrap {
+                            display: flex;
+                            gap: 80px;
+                            border-top: 1px solid #efefef;
+                        }
+                        .iotPluslink_wrap figure {
+                            max-width: 500px;
+                        }
+                        .iotPluslink_wrap figure {
+                            width: 100%;
+                        }
+                        .iotPluslink_wrap > div {
+                            flex-grow: 1;
+                        }
+                        .iotPluslink_wrap .iotPluslink_info,
+                        .iotPluslink_info {
+                            padding: 8px 12px;
+                            border-radius: 5px;
+                            background: #efefef;
+                            display: inline-block;
+                        }
+                        .iotPluslink_wrap .iotPluslink_alert,
+                        .iotPluslink_alert {
+                            padding: 8px 12px;
+                            border-radius: 5px;
+                            border: 1px solid #999;
+                            display: inline-block;
+                        }
+
+                        @media (max-width: 992px) {
+                            .text-extra-extra-large {
+                                font-size: 30px;
+                                line-height: 36px;
+                            }
+                            .tab-style2-1 .nav-tabs li {
+                                width: 50%;
+                                border-bottom: none;
+                                border-radius: 0;
+                                display: flex;
+                                float: left;
+                            }
+                            .small-screen {
+                                height: 200px;
+                            }
+
+                            #iotPluslink_img_wrap {
+                                height: auto;
+                                padding: 50px 15px;
+                            }
+                            #iotPluslink_img_wrap ul {
+                                flex-wrap: wrap;
+                                align-items: flex-start;
+                            }
+                            #iotPluslink_img_wrap ul li {
+                                width: 33.3333%;
+                            }
+                            #iotPluslink_img_wrap ul li img {
+                                height: 60px;
+                            }
+
+                            .iotPluslink_wrap {
+                                flex-wrap: wrap;
+                                gap: 0;
+                            }
+                            .iotPluslink_wrap figure {
+                                max-width: inherit;
+                                order: 1;
+                            }
+                            .iotPluslink_wrap > div {
+                                order: 2;
+                            }
+
+                            .iotPluslink_wrap .text-orange {
+                                display: block;
+                            }
+                        }
+                        @media screen and (max-width: 767px) {
+                            section.small-screen {
+                                padding-bottom: 50px !important;
+                            }
+                        }
+                    </style>
+
+                    <!-- start page title section -->
+                    <section class="p-0 small-screen position-relative wow top-space">
+                        <div class="bg-extra-dark-gray z-index-0"></div>
+                        <div class="container position-relative">
+                            <div class="row align-items-center">
+                                <div
+                                    class="col-12 small-screen d-flex flex-column justify-content-center page-title-large text-center"
+                                >
+                                    <!-- start page title -->
+                                    <h1
+                                        class="alt-font text-extra-dark-gray font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0"
+                                    >
+                                        Technology
+                                    </h1>
+                                    <!-- end page title -->
+                                    <!-- start sub title -->
+                                    <span
+                                        class="d-block font-size-20 sm-font-size-18 text-extra-dark-gray text-333 margin-5px-top alt-font"
+                                        >We provide innovative solutions <br class="mobile" />to expand business</span
+                                    >
+                                    <!-- end sub title -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end page title section -->
+
+                    <!-- start tabs section -->
+                    <section class="wow tab-style2-2-section" style="padding: 0px 0px !important">
+                        <div class="tab-style2-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- tab navigation -->
+                                    <ul class="text-uppercase text-center font-weight-600 justify-content-center">
+                                        <li class="pc"><a href="/design.html" class="nav-link">디자인</a></li>
+                                        <li class="pc"><a href="/mortise.html" class="nav-link">모티스</a></li>
+                                        <li class="">
+                                            <a href="/iot-service.html" class="nav-link active"
+                                                >Iot서비스 &amp; 플러스링크</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <!-- tab end navigation -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end tabs section -->
+
+                    <!-- start about section -->
+                    <section class="wow animate__fadeIn padding-15px-tb">
+                        <div class="container">
+                            <div class="row">
+                                <div
+                                    class="col-12 margin-35px-tb md-no-margin-top md-margin-30px-bottom sm-no-margin-bottom wow animate__fadeIn"
+                                >
+                                    <div
+                                        class="alt-font font-size-40 sm-font-size-26 text-extra-dark-gray font-weight-600 margin-50px-bottom sm-margin-30px-top sm-margin-30px-bottom letter-spacing-minus-1rem"
+                                    >
+                                        IoT &amp; 플러스 링크
+                                    </div>
+                                    <!--img src="/_vb/images/technology_img09.png" class="w-100" alt=""/-->
+                                    <div id="iotPluslink_img_wrap" class="margin-30px-bottom text-center">
+                                        <div class="font-size-30 sm-font-size-22 font-weight-600 text-fff">
+                                            공간을. 안심을. 사람을 잇다
+                                        </div>
+                                        <ul class="padding-50px-tb sm-padding-60px-top sm-padding-50px-bottom">
+                                            <li class="sm-margin-30px-bottom">
+                                                <img
+                                                    class="margin-20px-bottom"
+                                                    src="../assets/img/pluslink_big01-2.svg"
+                                                    alt="Smart Alarm"
+                                                />
+                                                <div class="text-fff">스마트 알람</div>
+                                            </li>
+                                            <li class="sm-margin-30px-bottom">
+                                                <img
+                                                    class="margin-20px-bottom"
+                                                    src="../assets/img/pluslink_big02-2.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-fff">스마트 오토 오픈</div>
+                                            </li>
+                                            <li class="sm-margin-30px-bottom">
+                                                <img
+                                                    class="margin-20px-bottom"
+                                                    src="../assets/img/pluslink_big03-2.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-fff">원터치 키 발급</div>
+                                            </li>
+                                            <li>
+                                                <img
+                                                    class="margin-20px-bottom"
+                                                    src="../assets/img/pluslink_big04-2.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-fff">디바이스 이벤트</div>
+                                            </li>
+                                            <li>
+                                                <img
+                                                    class="margin-20px-bottom"
+                                                    src="../assets/img/pluslink_big05-2.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-fff">간편한 설정</div>
+                                            </li>
+                                            <li>
+                                                <img
+                                                    class="margin-20px-bottom"
+                                                    src="../assets/img/pluslink_big06-2.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-fff">통합관리</div>
+                                            </li>
+                                        </ul>
+                                        <div class="font-size-20 sm-font-size-18 font-weight-500 text-fff">
+                                            본 서비스에 최적화된 스마트폰 단말은 <br class="mobile" />아래와 같습니다.
+                                        </div>
+                                        <div class="font-weight-400 text-eee margin-10px-top sm-margin-15px-top">
+                                            블루투스 4.0(LE 지원) 이상의 하드웨어 및 <br class="mobile" />안드로이드 5.0
+                                            이상의 OS가 설치된 단말기<br />
+                                            iOS 8.0 이상 버전이 설치된 iPhone 5 이상의 단말기
+                                        </div>
+                                    </div>
+
+                                    <!-- Smart Alarm section -->
+                                    <div class="iotPluslink_wrap padding-50px-tb sm-padding-30px-tb">
+                                        <figure><img src="../assets/img/iot_img01.png" /></figure>
+                                        <div>
+                                            <div class="margin-10px-top margin-20px-bottom">
+                                                <span
+                                                    class="font-size-32 sm-font-size-22 font-weight-600 text-orange margin-10px-right"
+                                                    >01</span
+                                                >
+                                                <span class="font-size-32 sm-font-size-22 font-weight-600 text-333"
+                                                    >디바이스로 사람을 잇다</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-bottom sm-margin-10px-bottom"
+                                            >
+                                                Keyin 스마트 알람
+                                            </div>
+                                            <p class="font-weight-400 text-333">
+                                                혹시 모를 화재나 빈집털이가 우려되신다고요?<br />
+                                                스마트한 Keyin은 열 감지 및 침입 감지 센서를 통해 이상 징후를
+                                                포착합니다.<br />
+                                                외부에서도 애플리케이션을 통해 긴급 알람을 받아볼 수 있죠.<br />
+                                                <br />
+                                                타지에 살고 있는 연로하신 부모님이 걱정되신다고요?<br />
+                                                앱을 통해 가족 구성원을 초대해보세요.<br />
+                                                똑똑한 Keyin이 부모님의 외출 시간과 복귀 시간을 알려드린답니다.<br />
+                                                <br />
+                                                물론 우리집은 기본입니다. 직장에 계셔도 똑똑한 키인은<br />
+                                                내 자녀가 안전하게 집에 도착했는지도 알려준답니다.
+                                            </p>
+                                            <p
+                                                class="iotPluslink_alert font-size-16 sm-font-size-12 font-weight-400 text-666 margin-20px-top"
+                                            >
+                                                * 블루투스 연동 시 앱으로 도어락을 OPEN/CLOSE 하였을 경우에만 실시간
+                                                알람이 전송됩니다.<br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Smart Alarm section -->
+
+                                    <!-- Smart Open section -->
+                                    <div class="iotPluslink_wrap padding-50px-tb sm-padding-30px-tb">
+                                        <div>
+                                            <div class="margin-10px-top margin-20px-bottom">
+                                                <span
+                                                    class="font-size-32 sm-font-size-22 font-weight-600 text-orange margin-10px-right"
+                                                    >02</span
+                                                >
+                                                <span class="font-size-32 sm-font-size-22 font-weight-600 text-333"
+                                                    >세상에서 가장 혁신적인 문 열림</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-bottom sm-margin-10px-bottom"
+                                            >
+                                                Keyin 스마트 오토 오픈
+                                            </div>
+                                            <p class="font-weight-400 text-333">
+                                                이런 놀라운 기술을 구현하기 위해 가상의 반경을 의미하는
+                                                지오펜스(Geofence) 기술을 사용했습니다.<br />
+                                                사용자가 외출 후 복귀 시 이 가상의 울타리 안에 들어오면 자동으로 Lock을
+                                                오픈 대기 상태로 전환하죠.<br />
+                                                <br />그리고 Lock 바로 앞에 근접 시 문을 자동으로 열어줍니다.<br />
+                                                귀찮게 비밀번호 등을 입력할 필요도 없어진 셈이죠.<br />
+                                                친구들 앞에서 이런 최첨단 기술을 자랑할 수도 있죠.
+                                            </p>
+                                            <p
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-top"
+                                            >
+                                                스마트 오픈
+                                            </p>
+                                            <p class="font-weight-400 text-333">
+                                                도어락과 연동된 스마트폰을 소지한 채 도어락에 가까이 가면 도어락 잠금이
+                                                자동으로 해제됩니다.
+                                            </p>
+                                            <p
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-10px-top"
+                                            >
+                                                스마트 터치
+                                            </p>
+                                            <p class="font-weight-400 text-333">
+                                                도어락과 연동된 스마트폰을 소지한 채 도어락의 터치패드를 살짝 터치만
+                                                하면 잠금이 해제됩니다.
+                                            </p>
+                                            <p
+                                                class="iotPluslink_info font-size-16 sm-font-size-12 font-weight-400 text-666 margin-20px-top"
+                                            >
+                                                ※ 스마트오픈/터치 기능은 스마트폰 사양 및 제품 설치환경에 따라 정상
+                                                작동하지 않을 수 있습니다.
+                                            </p>
+                                        </div>
+                                        <figure><img src="../assets/img/iot_img02.png" /></figure>
+                                    </div>
+                                    <!-- Smart Open section -->
+
+                                    <!-- One Touch Key Issuing section -->
+                                    <div class="iotPluslink_wrap padding-50px-tb sm-padding-30px-tb">
+                                        <figure><img src="../assets/img/iot_img03.png" /></figure>
+                                        <div>
+                                            <div class="margin-10px-top margin-20px-bottom">
+                                                <span
+                                                    class="font-size-32 sm-font-size-22 font-weight-600 text-orange margin-10px-right"
+                                                    >03</span
+                                                >
+                                                <span class="font-size-32 sm-font-size-22 font-weight-600 text-333"
+                                                    >혁신적인 방식의 키 발급 &amp; 키 매니저</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-top margin-10px-bottom sm-margin-10px-bottom"
+                                            >
+                                                Keyin 원터치 키 발급
+                                            </div>
+                                            <p class="font-weight-400 text-333">
+                                                사용자의 유형에 맞추어 3가지 종류의 키를 터치 한번만으로 App을 통해
+                                                편리하게 발급할 수 있습니다.<br />
+                                                또한 관리 탭에서 발급한 키 상세정보 및 권한의 변경 등을 편리하게
+                                                편집하고 관리할 수 있습니다.
+                                            </p>
+                                            <p
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-top"
+                                            >
+                                                패밀리 키
+                                            </p>
+                                            <p class="font-weight-400 text-333">앱을 자주 사용하는 가족 등을 위한 키</p>
+                                            <p
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-10px-top"
+                                            >
+                                                게스트 키
+                                            </p>
+                                            <p class="font-weight-400 text-333">
+                                                특정 기간, 특정 기간 내 특정 요일 및 시간에만 사용할 수 있는 키
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- One Touch Key Issuing section -->
+
+                                    <!-- Event Log section -->
+                                    <div class="iotPluslink_wrap padding-50px-tb sm-padding-30px-tb">
+                                        <div>
+                                            <div class="margin-10px-top margin-20px-bottom">
+                                                <span
+                                                    class="font-size-32 sm-font-size-22 font-weight-600 text-orange margin-10px-right"
+                                                    >04</span
+                                                >
+                                                <span class="font-size-32 sm-font-size-22 font-weight-600 text-333"
+                                                    >한눈에 들어오는 이력관리</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-top margin-10px-bottom sm-margin-10px-bottom"
+                                            >
+                                                우리집 보안 디바이스의 모든 이벤트
+                                            </div>
+                                            <p class="font-weight-400 text-333">
+                                                여러 개의 보안 디바이스의 모든 이력(입/출입, 침입/파손/화재 등 경고
+                                                이벤트 등)을<br />
+                                                항목별로 앱을 통해 한 눈에 확인이 가능합니다.
+                                            </p>
+                                            <p
+                                                class="iotPluslink_alert font-size-16 sm-font-size-12 font-weight-400 text-666 margin-20px-top"
+                                            >
+                                                * 도어락과 스마트폰 블루투스 연동 범위 내에서 실시간으로 이력이 업데이트
+                                                됩니다.
+                                            </p>
+                                        </div>
+                                        <figure><img src="../assets/img/iot_img04.png" /></figure>
+                                    </div>
+                                    <!-- Event Log section -->
+
+                                    <!-- Device Setting section -->
+                                    <div class="iotPluslink_wrap padding-50px-tb sm-padding-30px-tb">
+                                        <figure><img src="../assets/img/iot_img05.png" /></figure>
+                                        <div>
+                                            <div class="margin-10px-top margin-20px-bottom">
+                                                <span
+                                                    class="font-size-32 sm-font-size-22 font-weight-600 text-orange margin-10px-right"
+                                                    >05</span
+                                                >
+                                                <span class="font-size-32 sm-font-size-22 font-weight-600 text-333"
+                                                    >디바이스를 내 손 안에, 간편한 설정</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-top margin-10px-bottom sm-margin-10px-bottom"
+                                            >
+                                                Keyin 앱의 다양한 기능
+                                            </div>
+                                            <p class="font-weight-400 text-333">
+                                                Keyin의 보안 디바이스의 다양한 기능을 앱을 통해 편리하게 설정할 수
+                                                있습니다.
+                                            </p>
+                                            <p
+                                                class="iotPluslink_alert font-size-16 sm-font-size-12 font-weight-400 text-666 margin-20px-top"
+                                            >
+                                                * 도어락과 스마트폰 블루투스 연동 범위 내에서 설정이 가능합니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Device Setting section -->
+
+                                    <!-- Keyin IoT Ecosystem section -->
+                                    <div class="iotPluslink_wrap padding-50px-tb sm-padding-30px-tb">
+                                        <div>
+                                            <div class="margin-10px-top margin-20px-bottom">
+                                                <span
+                                                    class="font-size-32 sm-font-size-22 font-weight-600 text-orange margin-10px-right"
+                                                    >06</span
+                                                >
+                                                <span class="font-size-32 sm-font-size-22 font-weight-600 text-333"
+                                                    >모든것을 가능하게 하는 키인 IoT 생태계</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="font-size-20 sm-font-size-18 font-weight-700 text-333 margin-20px-top margin-10px-bottom sm-margin-10px-bottom"
+                                            >
+                                                블루투스 연동 통합관리
+                                            </div>
+                                            <p class="font-weight-400 text-333">
+                                                키인의 모든 디바이스는 낮은 소비전력과 높은 보안성과 확장된 사용범위를
+                                                제공하는 블루투스 5.0방식을 지원합니다.<br />
+                                                <br />
+                                                모든 제품 안에 초소형 블루투스 모듈을 내장했기 때문이죠.<br />
+                                                여러 개의 보안 디바이스를 연동하는 것은 물론,<br />
+                                                하나의 앱을 통해 다양한 보안 디바이스를 등록하여 통합적으로 관리할 수
+                                                있습니다.
+                                            </p>
+                                        </div>
+                                        <figure><img src="../assets/img/iot_img06.png" /></figure>
+                                    </div>
+                                    <!-- Keyin IoT Ecosystem -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end about section -->
+
+                    <!-- start about section -->
+                    <section
+                        class="wow animate__fadeIn border-top border-width-1 border-color-medium-gray big-section"
+                        style="padding: 15px 0px !important; border-top: none !important"
+                    >
+                        <div class="container">
+                            <div class="row">
+                                <div
+                                    class="col-12 margin-35px-bottom md-no-margin-top md-margin-30px-bottom wow animate__fadeIn"
+                                >
+                                    <div
+                                        class="alt-font font-size-40 sm-font-size-26 text-extra-dark-gray font-weight-600 padding-50px-top sm-padding-30px-top margin-50px-bottom sm-margin-30px-bottom"
+                                        style="border-top: solid 1px #939393"
+                                    >
+                                        KeyinE 플러스락
+                                    </div>
+                                    <img
+                                        src="../assets/img/technology_img10-1.png"
+                                        class="w-100"
+                                        alt=""
+                                        style="border-radius: 16px"
+                                    />
+                                    <div
+                                        class="font-size-32 sm-font-size-22 font-weight-600 w-90 alt-font md-w-100 margin-15px-bottom"
+                                    >
+                                        KeyinE &amp; Plus LOCK으로 <br class="mobile" />강화된 보안
+                                    </div>
+                                    <p class="w100 margin-20px-bottom lg-w-100" style="word-break: keep-all">
+                                        플러스링크로 악세사리류만 업그레이드가 가능한 것이 아닙니다. 진짜 보안이 한 단계
+                                        진화도 가능하지요. 그런 생각으로 만든 것이 바로 플러스락입니다.<br />
+                                        한번 생각해보셨나요? 문은 열리는 순간 보안이 끝납니다. 택배가 왔을 때, 음식
+                                        배달이 왔을 때, 우리는 아무 생각 없이 문을 열지만 그 순간 우리는 수만가지 위험에
+                                        노출이 되어 있는 상태인 것입니다.<br />
+                                        <br />
+                                        그렇다면 문이 열린 상태에서도 보안을 유지할 수는 없을까요? 라오나크의 Creative
+                                        Lab는 그 해결책으로 플러스락을 개발하였습니다.<br />
+                                        문이 열린 상태에서도 걸쇠를 유지하여 보안을 유지하고, 이 과정이 번거롭지 않고
+                                        자연스럽게 일어날 수 있도록 UX(사용자 경험)을 디자인하였습니다. 버튼 한번으로
+                                        걸쇠를 유지한채 여는 보안 모드, 그리고 다른 버튼 한번으로 모든 걸쇠가 열리는
+                                        완전 열림 모드를 손쉽게 조작할 수 있게 된 것입니다. 요즘 같은 비대면 시대에
+                                        우리에게 가장 필요한 보안 장치입니다.
+                                    </p>
+                                    <p
+                                        class="iotPluslink_info font-size-16 sm-font-size-12 font-weight-400 text-666 margin-30px-bottom"
+                                    >
+                                        * 본 제품은 바깥쪽으로 열리는 문에만 작동합니다.
+                                    </p>
+                                    <div class="text-orange font-weight-600">* 특허번호 : 10-2020-0129913</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end about section -->
+                    <!-- content End -->
+                </div>
+            </div>
+            <!--#include file="./_footer.html"-->
+        </div>
+    </body>
+</html>

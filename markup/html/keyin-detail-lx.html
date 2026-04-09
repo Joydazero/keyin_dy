@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+        <link rel="stylesheet" href="../assets/css/vb/detail.css" />
+        <link rel="stylesheet" href="../assets/css/vb/additional.css" />
+        <link rel="stylesheet" href="../assets/css/vb/defult.css" />
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!--#include file="./_header.html"-->
+            <div id="container">
+                <div id="contents">
+                    <!-- 컨텐츠 시작 -->
+                    <style>
+                        .sec_content.top-space {
+                            margin-top: 104px;
+                            padding: 130px 0;
+                            overflow: hidden;
+                        }
+
+                        .sec_content {
+                            padding-top: 50px !important;
+                        }
+
+                        .ec-base-button .vb-btn-1,
+                        .ec-base-button .vb-btn-1-white {
+                            height: 47px !important;
+                            line-height: 47px !important;
+                            padding: 0 !important;
+                        }
+
+                        .ec-base-button .vb-btn-1 span,
+                        .ec-base-button .vb-btn-1-white.wish {
+                            font-size: 16px;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            .sec_content {
+                                padding-top: 0px !important;
+                            }
+
+                            .ec-base-button .vb-btn-1,
+                            .ec-base-button .vb-btn-1-white {
+                                height: 45px !important;
+                                line-height: 45px !important;
+                                padding: 0 !important;
+                            }
+
+                            .ec-base-button .vb-btn-1 span,
+                            .ec-base-button .vb-btn-1-white.wish {
+                                font-size: 16px;
+                                letter-spacing: 1px;
+                            }
+                        }
+
+                        /*구매기능 임시 삭제*/
+                        #totalProducts,
+                        .xans-product-detail .infoArea .xans-product-action {
+                            display: none !important;
+                        }
+
+                        .totalPrice {
+                            border-top: 1px solid #eee;
+                            padding: 20px 0;
+                        }
+                    </style>
+                    <section class="sec_content top-space">
+                        <div class="container">
+                            <div id="detail_inner">
+                                <div class="xans-element- xans-product xans-product-detail top_inner">
+                                    <div class="detailArea">
+                                        <!-- 이미지 영역 -->
+                                        <div class="xans-element- xans-product xans-product-image imgArea">
+                                            <!-- Swiper -->
+                                            <div class="keyImg">
+                                                <div
+                                                    style="
+                                                        --swiper-navigation-color: #fff;
+                                                        --swiper-pagination-color: #fff;
+                                                    "
+                                                    class="swiper detailImgSwiper"
+                                                >
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="thumbnail">
+                                                                <img
+                                                                    src="../assets/img/product_detail/keyin-detail-lx-img-01.jpg"
+                                                                    alt="Keyin S"
+                                                                    class="BigImage"
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumbnail">
+                                                                <img
+                                                                    src="../assets/img/product_detail/keyin-detail-lx-img-02.jpg"
+                                                                    alt="Keyin S"
+                                                                    class="BigImage"
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumbnail">
+                                                                <img
+                                                                    src="../assets/img/product_detail/keyin-detail-lx-img-03.jpg"
+                                                                    alt="Keyin S"
+                                                                    class="BigImage"
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumbnail">
+                                                                <img
+                                                                    src="../assets/img/product_detail/keyin-detail-lx-img-04.jpg"
+                                                                    alt="Keyin S"
+                                                                    class="BigImage"
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="thumbnail">
+                                                                <img
+                                                                    src="../assets/img/product_detail/keyin-detail-lx-img-05.jpg"
+                                                                    alt="Keyin S"
+                                                                    class="BigImage"
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="listImg">
+                                                <div thumbsSlider="" class="swiper detailthumbsSwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img
+                                                                src="../assets/img/product_detail/keyin-detail-lx-img-01.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img
+                                                                src="../assets/img/product_detail/keyin-detail-lx-img-02.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img
+                                                                src="../assets/img/product_detail/keyin-detail-lx-img-03.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img
+                                                                src="../assets/img/product_detail/keyin-detail-lx-img-04.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img
+                                                                src="../assets/img/product_detail/keyin-detail-lx-img-05.jpg"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //참고 -->
+                                        </div>
+                                        <script>
+                                            const swiper = new Swiper('.detailthumbsSwiper', {
+                                                spaceBetween: 10,
+                                                slidesPerView: 1,
+                                                freeMode: true,
+                                                watchSlidesProgress: true,
+                                            });
+                                            const swiper2 = new Swiper('.detailImgSwiper', {
+                                                spaceBetween: 10,
+                                                thumbs: {
+                                                    swiper,
+                                                },
+                                            });
+                                        </script>
+                                        <!-- //이미지 영역 -->
+
+                                        <!-- 상세정보 내역 -->
+                                        <div class="infoArea soldout_displaynone">
+                                            <div class="product_title">Keyin LX</div>
+                                            <div class="likeButton displaynone">
+                                                <!--<img src="/skin-skin5/_vb/img/like_btn_bg_left2.png" /><button type="button">LIKE<span class="count"></span></button><img src="/skin-skin5/_vb/img/like_btn_bg_right2.png" />-->
+                                            </div>
+
+                                            <!--<div class="custom_pro displaynone" d-price="" d-custom=""></div>-->
+
+                                            <div class="xans-element- xans-product xans-product-detaildesign">
+                                                <!--
+                                출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+                                count = 10
+                            -->
+                                                <div border="0" summary="">
+                                                    <ul>
+                                                        <li style="display: none" class="product_name_css xans-record-">
+                                                            <span class="title"
+                                                                ><span class="" style="font-size: 20px; color: #555555"
+                                                                    >상품명</span
+                                                                ></span
+                                                            >
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 20px; color: #555555"
+                                                                    >Keyin LX</span
+                                                                ></span
+                                                            >
+                                                        </li>
+                                                        <li class="summary_desc_css xans-record-">
+                                                            <span class="title" style="display: none"
+                                                                ><span
+                                                                    class=""
+                                                                    style="font-size: 16px; color: #555555"
+                                                                ></span
+                                                            ></span>
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 16px; color: #555555"
+                                                                    >Keyin LX 도어록은 즉시잠김에서 한발짝 더 나아가서
+                                                                    가장 직관적인 바 형태의 완벽한 디자인을
+                                                                    적용하였습니다. 한번 설치한 이후에도 고객의 취향에
+                                                                    맞춰 IoT 연결, 안면인식 확장이 가능한 진정한
+                                                                    스마트도어락입니다.</span
+                                                                ></span
+                                                            >
+                                                        </li>
+                                                        <li class="simple_desc_css xans-record-">
+                                                            <span class="title"
+                                                                ><span
+                                                                    class=""
+                                                                    style="font-size: 16px; color: #555555"
+                                                                ></span
+                                                            ></span>
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 16px; color: #555555">
+                                                                    <div class="margin-20px-top">
+                                                                        <a
+                                                                            href="#"
+                                                                            target="_self"
+                                                                            class="btn btn-transparent-black btn-large sm-margin-10px-top"
+                                                                            >Instruction manual</a
+                                                                        >
+                                                                    </div>
+                                                                </span></span
+                                                            >
+                                                        </li>
+                                                        <li class="custom_option1_css xans-record-">
+                                                            <span class="title"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >잠금 장치</span
+                                                                ></span
+                                                            >
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >password card fingerprint app</span
+                                                                ><img
+                                                                    src="../assets/img/product_detail/keyin_number.png"
+                                                                    alt="password"
+                                                                    data-no-retina="" /><img
+                                                                    src="../assets/img/product_detail/keyin_card.png"
+                                                                    alt="card"
+                                                                    data-no-retina="" /><img
+                                                                    src="../assets/img/product_detail/keyin_fingerprint.png"
+                                                                    alt="card"
+                                                                    data-no-retina="" /><img
+                                                                    src="../assets/img/product_detail/keyin_app.png"
+                                                                    alt="card"
+                                                                    data-no-retina=""
+                                                            /></span>
+                                                        </li>
+                                                        <li class="custom_option3_css xans-record-">
+                                                            <span class="title"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >문 두께</span
+                                                                ></span
+                                                            >
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >40~100mm</span
+                                                                ></span
+                                                            >
+                                                        </li>
+                                                        <li class="custom_option4_css xans-record-">
+                                                            <span class="title"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >프론트 바디</span
+                                                                ></span
+                                                            >
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >79.4(W) X 403.4(H) X 68(D) mm</span
+                                                                ></span
+                                                            >
+                                                        </li>
+                                                        <li class="custom_option5_css xans-record-">
+                                                            <span class="title"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >메인 바디</span
+                                                                ></span
+                                                            >
+                                                            <span class="con"
+                                                                ><span class="" style="font-size: 14px; color: #333333"
+                                                                    >79.4(W) X 403.1(H) X 50.5(D) mm</span
+                                                                ></span
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- 국문 사용시 영역 -->
+
+                                            <div id="totalPrice" class="totalPrice">
+                                                <strong>TOTAL</strong> :
+                                                <span class="total"
+                                                    ><strong><em class="">330,000원</em></strong> (1개)</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 국문 사용시 영역 -->
+                                </div>
+                                <!-- 하단 상품 정보 S -->
+                                <div class="xans-element- xans-product xans-product-additional">
+                                    <!-- 관련상품 -->
+                                    <!--// 관련상품 -->
+                                    <!-- 상품상세정보 -->
+                                    <div style="overflow: hidden">
+                                        <div id="prdDetail" class="ec-base-tab_detail grid5">
+                                            <div class="tab_margin"></div>
+                                            <div class="detail_tap_inner">
+                                                <ul class="menu">
+                                                    <li class="selected"><a href="#prdDetail">상품정보</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="xans-element- xans-product xans-product-detail">
+                                                <div class="eventArea displaynone">
+                                                    <div class="event"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 상품정보 시작 -->
+                                            <div class="xans-element- xans-product xans-product-additional">
+                                                <div class="cont">
+                                                    <div
+                                                        class="edibot-product-detail"
+                                                        style="width: 1000px; max-width: 100%; margin: 0 auto"
+                                                    >
+                                                        <div
+                                                            data-api="1.0.0"
+                                                            data-classid="etc_0"
+                                                            data-created="2025-01-16 15:46:45"
+                                                            data-groupid="null"
+                                                            data-projectid="N250116_1539"
+                                                            data-sessionid="3"
+                                                            data-shoplang="ko_KR"
+                                                            data-shopno="1"
+                                                            data-version="2.0.0"
+                                                            type="application/json"
+                                                            class="-edibot-metadata"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <style>
+                                                            .edibot-product-detail
+                                                                .edb-img-tag-w:has(img[ec-data-src]:first-child)
+                                                                > div:has(div[data-aos] img[ec-data-src]) {
+                                                                visibility: hidden;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                .edb-img-tag-w
+                                                                > div:has(div[data-aos] img[ec-data-src]) {
+                                                                position: absolute;
+                                                                top: 0% !important;
+                                                                left: 50% !important;
+                                                                transform: translate(0%, 0%) rotate(0deg) !important;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                .edb-img-tag-w
+                                                                > div
+                                                                div[data-aos]
+                                                                div:has(img[ec-data-src]) {
+                                                                position: absolute !important;
+                                                                top: 0 !important;
+                                                                left: 0 !important;
+                                                                transform: none !important;
+                                                            }
+
+                                                            .edibot-product-detail * {
+                                                                font-family: inherit;
+                                                                font-size: inherit;
+                                                            }
+
+                                                            .edibot-product-detail img[src=''],
+                                                            .edibot-product-detail img:not([src]) {
+                                                                visibility: hidden !important;
+                                                                height: 1px !important;
+                                                            }
+
+                                                            .edibot-product-detail div#edb-img-tag,
+                                                            .edibot-product-detail div#edb-img-tag * {
+                                                                position: unset;
+                                                                border: 0;
+                                                                border-radius: 0;
+                                                                box-sizing: content-box;
+                                                                height: auto;
+                                                                line-height: normal;
+                                                                min-height: auto;
+                                                                text-align: left;
+                                                                transform: none;
+                                                                margin: 0;
+                                                                opacity: 1;
+                                                                padding: 0;
+                                                                transition: opacity 0.15s linear,
+                                                                    background 0.15s linear, border 0.15s linear;
+                                                            }
+
+                                                            .edibot-product-detail div#edb-img-tag .edb-tag {
+                                                                position: absolute;
+                                                                display: block;
+                                                                background: rgba(0, 0, 0, 0.3);
+                                                                border-radius: 50%;
+                                                                border: 1px solid transparent;
+                                                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                                                                box-sizing: border-box;
+                                                                cursor: pointer;
+                                                                height: 32px;
+                                                                text-decoration: none;
+                                                                transform: translate(-50%, -50%);
+                                                                width: 32px;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                .edb-img-tag-w.hover
+                                                                div#edb-img-tag
+                                                                .edb-tag {
+                                                                opacity: 0;
+                                                                visibility: hidden;
+                                                            }
+
+                                                            .edibot-product-detail div#edb-img-tag .edb-tag:before {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: -1px;
+                                                                left: -1px;
+                                                                right: -1px;
+                                                                bottom: -1px;
+                                                            }
+
+                                                            .edibot-product-detail div#edb-img-tag .edb-tag:after {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                right: 0;
+                                                                bottom: 0;
+                                                                display: block;
+                                                                background-color: #fff;
+                                                                border-radius: 50%;
+                                                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                                                                height: 10px;
+                                                                margin: auto;
+                                                                transition: transform 0.15s linear;
+                                                                width: 10px;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag
+                                                                .edb-tag-name {
+                                                                position: absolute;
+                                                                display: block;
+                                                                align-items: center;
+                                                                background: #fff;
+                                                                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+                                                                color: #000;
+                                                                font-family: -apple-system, Apple SD Gothic Neo,
+                                                                    malgun gothic, arial, sans-serif;
+                                                                font-size: 12px;
+                                                                font-style: normal;
+                                                                line-height: 36px;
+                                                                margin: 50% 0 0 50%;
+                                                                max-width: 201px;
+                                                                opacity: 0;
+                                                                overflow: hidden;
+                                                                padding: 0 28px 0 11px;
+                                                                text-decoration: none;
+                                                                text-overflow: ellipsis;
+                                                                transform: translate(-50%, -100%) translateY(-26px);
+                                                                visibility: hidden;
+                                                                white-space: nowrap;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag
+                                                                .edb-tag-name:after {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: 0;
+                                                                bottom: 1px;
+                                                                right: 10px;
+                                                                margin: auto 0;
+                                                                background: url(//img.cafe24.com/csdstatic/edibot/v2/img/ui/ec/bg_tag.png)
+                                                                    no-repeat;
+                                                                background-size: 5px 9px;
+                                                                height: 9px;
+                                                                margin-left: 10px;
+                                                                width: 5px;
+                                                            }
+
+                                                            .edibot-product-detail div#edb-img-tag .edb-tag.top:before {
+                                                                margin-top: -10px;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag.right:before {
+                                                                margin-right: -10px;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag.right
+                                                                .edb-tag-name {
+                                                                transform: translate(26px, -50%);
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag.bottom:before {
+                                                                margin-bottom: -10px;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag.bottom
+                                                                .edb-tag-name {
+                                                                transform: translate(-50%, 26px);
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag.left:before {
+                                                                margin-left: -10px;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag.left
+                                                                .edb-tag-name {
+                                                                transform: translate(-100%, -50%) translateX(-26px);
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                .edb-img-tag-w.hover:hover
+                                                                div#edb-img-tag
+                                                                .edb-tag,
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag:hover
+                                                                .edb-tag-name {
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+
+                                                            .edibot-product-detail div#edb-img-tag .edb-tag:hover {
+                                                                border: 1px solid #eee;
+                                                                background-color: #009cff;
+                                                                box-shadow: none;
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag:hover:after {
+                                                                transform: scale(0.6);
+                                                            }
+
+                                                            .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag
+                                                                .edb-tag-name:hover {
+                                                                text-decoration: underline;
+                                                            }
+
+                                                            html:lang(ja)
+                                                                .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag
+                                                                .edb-tag-name {
+                                                                font-family: -apple-system, verdana, Meiryo, 'メイリオ',
+                                                                    sans-serif;
+                                                            }
+
+                                                            html:lang(en)
+                                                                .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag
+                                                                .edb-tag-name,
+                                                            html:lang(vi)
+                                                                .edibot-product-detail
+                                                                div#edb-img-tag
+                                                                .edb-tag
+                                                                .edb-tag-name {
+                                                                font-family: -apple-system, Helvetica Neue, Helvetica,
+                                                                    Arial, Sans-serif;
+                                                            }
+
+                                                            @media only screen and (hover: none) and (pointer: coarse) {
+                                                                .edibot-product-detail
+                                                                    .edb-img-tag-w.hover
+                                                                    div#edb-img-tag
+                                                                    .edb-tag {
+                                                                    opacity: 1;
+                                                                    visibility: visible;
+                                                                }
+                                                            }
+                                                        </style>
+                                                        <div style="position: relative" class="edb-img-tag-w">
+                                                            <div
+                                                                style="
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    position: relative;
+                                                                    font-family: 'malgun gothic', sans-serif;
+                                                                    font-size: 14px;
+                                                                    color: #000000;
+                                                                    font-style: normal;
+                                                                    font-weight: 400;
+                                                                    text-align: center;
+                                                                    line-height: 1.5;
+                                                                    letter-spacing: 0;
+                                                                    word-spacing: 0;
+                                                                    background-color: rgba(255, 255, 255, 0);
+                                                                    text-decoration-skip-ink: none;
+                                                                "
+                                                            >
+                                                                <div
+                                                                    style="
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        position: relative;
+                                                                        font-family: 'malgun gothic', sans-serif;
+                                                                        font-size: 14px;
+                                                                        color: #000000;
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        text-align: center;
+                                                                        line-height: 1.5;
+                                                                        letter-spacing: 0;
+                                                                        word-spacing: 0;
+                                                                        background-color: rgba(255, 255, 255, 0);
+                                                                        text-decoration-skip-ink: none;
+                                                                    "
+                                                                >
+                                                                    <div style="text-align: center">
+                                                                        <span
+                                                                            data-mobile-font-size="12"
+                                                                            data-pc-font-size="18"
+                                                                            style="
+                                                                                color: rgb(234, 85, 24);
+                                                                                font-family: 'malgun gothic';
+                                                                                font-style: normal;
+                                                                                font-weight: 700;
+                                                                                font-size: 18px;
+                                                                            "
+                                                                            >제품 구매 전 반드시 확인해주세요!</span
+                                                                        >
+                                                                    </div>
+                                                                    <br />
+                                                                    <div style="text-align: center">
+                                                                        <span
+                                                                            data-mobile-font-size="12"
+                                                                            data-pc-font-size="14"
+                                                                            style="
+                                                                                font-family: 'malgun gothic';
+                                                                                font-style: normal;
+                                                                                font-weight: 700;
+                                                                                font-size: 14px;
+                                                                            "
+                                                                            >1. 상세페이지 하단의 설치 지역, 별도 추가
+                                                                            비용, 설치 가능 여부를 반드시
+                                                                            체크해주세요.</span
+                                                                        >
+                                                                    </div>
+                                                                    <br />
+                                                                    <div style="text-align: center">
+                                                                        <span
+                                                                            data-mobile-font-size="12"
+                                                                            data-pc-font-size="14"
+                                                                            style="
+                                                                                font-family: 'malgun gothic';
+                                                                                font-style: normal;
+                                                                                font-weight: 700;
+                                                                                font-size: 14px;
+                                                                            "
+                                                                            >2. 설치 가능 여부 확인이 필요할 경우,
+                                                                            해당번호(070-7575-0869)로 전화 상담이
+                                                                            가능합니다.&nbsp;</span
+                                                                        >
+                                                                    </div>
+                                                                    <div style="text-align: center">
+                                                                        <span
+                                                                            data-mobile-font-size="12"
+                                                                            data-pc-font-size="14"
+                                                                            style="
+                                                                                font-family: 'malgun gothic';
+                                                                                font-style: normal;
+                                                                                font-weight: 400;
+                                                                                font-size: 14px;
+                                                                            "
+                                                                            >( 문 상태에 따라, 설치하실 문의 바깥, 안쪽,
+                                                                            측면 프레임 3컷의 사진이 필요함 )</span
+                                                                        >
+                                                                    </div>
+                                                                </div>
+                                                                <div style="text-align: center"><br /></div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="
+                                                                display: block;
+                                                                content: ' ';
+                                                                height: 63.799997329711914px !important;
+                                                            "
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative; height: 21px">
+                                                            <div
+                                                                style="
+                                                                    height: 1px;
+                                                                    position: absolute;
+                                                                    overflow: hidden;
+                                                                    border-width: 1px 0 0;
+                                                                    top: 50%;
+                                                                    left: 0%;
+                                                                    width: 100%;
+                                                                    border-color: rgba(215, 215, 215, 1);
+                                                                    border-style: solid;
+                                                                "
+                                                            >
+                                                                <br />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="display: block; content: ' '; height: 0px !important"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <br />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="display: block; content: ' '; height: 0px !important"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <br />
+                                                            </div>
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <img
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                        width: 950px;
+                                                                    "
+                                                                    result="success"
+                                                                    name="EBA788EAB090.jpg"
+                                                                    size="950px/290px"
+                                                                    filesize="75,58 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    data-no-retina=""
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/EBA788EAB090.jpg"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="display: block; content: ' '; height: 0px !important"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/copy-1735029842-H120.png"
+                                                                    result="success"
+                                                                    name="copy-1735029842-H120.png"
+                                                                    size="950px/120px"
+                                                                    filesize="2,29 kB"
+                                                                    error=""
+                                                                    style="
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="display: block; content: ' '; height: 0px !important"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/ECA781EC9881EBAAB0_820.gif"
+                                                                    result="success"
+                                                                    name="ECA781EC9881EBAAB0_820.gif"
+                                                                    size="820px/773px"
+                                                                    filesize="1,64 MB"
+                                                                    error=""
+                                                                    style="
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    data-no-retina=""
+                                                                /><br />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="display: block; content: ' '; height: 0px !important"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <img
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/EAB5ACEBA7A4EC84A4ECB998EBACB8EC9D98.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                        width: 800px;
+                                                                    "
+                                                                    result="success"
+                                                                    name="EAB5ACEBA7A4EC84A4ECB998EBACB8EC9D98.jpg"
+                                                                    size="950px/78px"
+                                                                    filesize="20,61 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20250122/copy-1737514569-H_100.jpg"
+                                                                    result="success"
+                                                                    name="copy-1737514569-H_100.jpg"
+                                                                    size="890px/100px"
+                                                                    filesize="872,00 B"
+                                                                    error=""
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    src="../assets/img/product_detail/NNEditor/20250123/LXED948CEB9FACEC8AA4_1_1.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="LXED948CEB9FACEC8AA4_1_1.jpg"
+                                                                    size="893px/6212px"
+                                                                    filesize="1,48 MB"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    src="../assets/img/product_detail/NNEditor/20250123/H_100.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="H_100.jpg"
+                                                                    size="890px/100px"
+                                                                    filesize="872,00 B"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    src="../assets/img/product_detail/NNEditor/20250123/LXED948CEB9FACEC8AA4_1_2.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="LXED948CEB9FACEC8AA4_1_2.jpg"
+                                                                    size="890px/3946px"
+                                                                    filesize="877,30 kB"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    src="../assets/img/product_detail/NNEditor/20250123/EBAAA8ED8BB0EC8AA4EAB5ACECA1B0_ECA689EC8B9CEC9EA0EAB980.gif"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                        width: 890px;
+                                                                    "
+                                                                    result="success"
+                                                                    name="EBAAA8ED8BB0EC8AA4EAB5ACECA1B0_ECA689EC8B9CEC9EA0EAB980.gif"
+                                                                    size="950px/1300px"
+                                                                    filesize="2,62 MB"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                            <img
+                                                                data-fr-image-pasted="true"
+                                                                src="../assets/img/product_detail/NNEditor/20250123/LXED948CEB9FACEC8AA4_1_3.jpg"
+                                                                result="success"
+                                                                name="LXED948CEB9FACEC8AA4_1_3.jpg"
+                                                                size="890px/660px"
+                                                                filesize="162,56 kB"
+                                                                error=""
+                                                                style="
+                                                                    max-width: 100%;
+                                                                    color: rgb(0, 0, 0);
+                                                                    font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                        Dotum;
+                                                                    font-size: 12px;
+                                                                    font-style: normal;
+                                                                    font-variant-ligatures: normal;
+                                                                    font-variant-caps: normal;
+                                                                    font-weight: 400;
+                                                                    letter-spacing: normal;
+                                                                    orphans: 2;
+                                                                    text-indent: 0px;
+                                                                    text-transform: none;
+                                                                    widows: 2;
+                                                                    word-spacing: 0px;
+                                                                    -webkit-text-stroke-width: 0px;
+                                                                    white-space: normal;
+                                                                    text-decoration-thickness: initial;
+                                                                    text-decoration-style: initial;
+                                                                    text-decoration-color: initial;
+                                                                    display: block;
+                                                                    vertical-align: top;
+                                                                    margin: 0px auto;
+                                                                    text-align: center;
+                                                                "
+                                                                data-no-retina=""
+                                                            /><img
+                                                                src="../assets/img/product_detail/NNEditor/20250123/LXED948CEB9FACEC8AA4_1_4.jpg"
+                                                                style="
+                                                                    display: block;
+                                                                    vertical-align: top;
+                                                                    margin: 0px auto;
+                                                                    text-align: center;
+                                                                "
+                                                                result="success"
+                                                                name="LXED948CEB9FACEC8AA4_1_4.jpg"
+                                                                size="890px/188px"
+                                                                filesize="11,88 kB"
+                                                                error=""
+                                                                data-no-retina=""
+                                                            /><img
+                                                                src="../assets/img/product_detail/NNEditor/20250123/EBAAA8ED8BB0EC8AA4EAB5ACECA1B0_EC9DBCEBB098EB8F84EC96B4EB9DBD.gif"
+                                                                style="
+                                                                    display: block;
+                                                                    vertical-align: top;
+                                                                    margin: 0px auto;
+                                                                    text-align: center;
+                                                                    width: 890px;
+                                                                "
+                                                                result="success"
+                                                                name="EBAAA8ED8BB0EC8AA4EAB5ACECA1B0_EC9DBCEBB098EB8F84EC96B4EB9DBD.gif"
+                                                                size="950px/1194px"
+                                                                filesize="3,14 MB"
+                                                                error=""
+                                                                data-no-retina=""
+                                                            /><img
+                                                                src="../assets/img/product_detail/NNEditor/20250123/LXED948CEB9FACEC8AA4_1_5.jpg"
+                                                                style="
+                                                                    display: block;
+                                                                    vertical-align: top;
+                                                                    margin: 0px auto;
+                                                                    text-align: center;
+                                                                "
+                                                                result="success"
+                                                                name="LXED948CEB9FACEC8AA4_1_5.jpg"
+                                                                size="890px/331px"
+                                                                filesize="61,92 kB"
+                                                                error=""
+                                                                data-no-retina=""
+                                                            />
+                                                            <div
+                                                                style="
+                                                                    color: rgb(0, 0, 0);
+                                                                    font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                        Dotum;
+                                                                    font-size: 12px;
+                                                                    font-style: normal;
+                                                                    font-variant-ligatures: normal;
+                                                                    font-variant-caps: normal;
+                                                                    font-weight: 400;
+                                                                    letter-spacing: normal;
+                                                                    orphans: 2;
+                                                                    text-align: start;
+                                                                    text-indent: 0px;
+                                                                    text-transform: none;
+                                                                    widows: 2;
+                                                                    word-spacing: 0px;
+                                                                    -webkit-text-stroke-width: 0px;
+                                                                    white-space: normal;
+                                                                    text-decoration-thickness: initial;
+                                                                    text-decoration-style: initial;
+                                                                    text-decoration-color: initial;
+                                                                    width: 1000px;
+                                                                    max-width: 100%;
+                                                                    margin: 0px auto;
+                                                                "
+                                                                class="edibot-product-detail"
+                                                            >
+                                                                <br class="Apple-interchange-newline" />
+                                                            </div>
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <img
+                                                                    src="../assets/img/product_detail/NNEditor/20250122/copy-1737514416-LX20100B_2.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="copy-1737514416-LX20100B_2.jpg"
+                                                                    size="890px/8244px"
+                                                                    filesize="2,34 MB"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    src="../assets/img/product_detail/NNEditor/20250122/copy-1737514607-H_100.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="copy-1737514607-H_100.jpg"
+                                                                    size="890px/100px"
+                                                                    filesize="872,00 B"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20250122/LX20100B_3.jpg"
+                                                                    result="success"
+                                                                    name="LX20100B_3.jpg"
+                                                                    size="890px/5680px"
+                                                                    filesize="1,17 MB"
+                                                                    error=""
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    src="../assets/img/product_detail/NNEditor/20250122/copy-1737514616-H_100.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="copy-1737514616-H_100.jpg"
+                                                                    size="890px/100px"
+                                                                    filesize="872,00 B"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                />
+                                                                <img
+                                                                    src="../assets/img/product_detail/NNEditor/20250122/LX20100B_4.jpg"
+                                                                    style="
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    result="success"
+                                                                    name="LX20100B_4.jpg"
+                                                                    size="891px/11504px"
+                                                                    filesize="3,38 MB"
+                                                                    error=""
+                                                                    data-no-retina=""
+                                                                />
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/copy-1735028865-H80.png"
+                                                                    result="success"
+                                                                    name="copy-1735028865-H80.png"
+                                                                    size="950px/80px"
+                                                                    filesize="1,56 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                />
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/EBA788EAB090.png"
+                                                                    result="success"
+                                                                    name="EBA788EAB090.png"
+                                                                    size="951px/290px"
+                                                                    filesize="31,75 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                />
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/copy-1735028865-H80.png"
+                                                                    result="success"
+                                                                    name="copy-1735028865-H80.png"
+                                                                    size="950px/80px"
+                                                                    filesize="1,56 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/EC9DBDEC96B4EBB490ECA3BCEC84B8EC9A94.png"
+                                                                    result="success"
+                                                                    name="EC9DBDEC96B4EBB490ECA3BCEC84B8EC9A94.png"
+                                                                    size="951px/1070px"
+                                                                    filesize="144,04 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                /><img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/copy-1735028865-H80.png"
+                                                                    result="success"
+                                                                    name="copy-1735028865-H80.png"
+                                                                    size="950px/80px"
+                                                                    filesize="1,56 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                />
+                                                                <img
+                                                                    data-fr-image-pasted="true"
+                                                                    src="../assets/img/product_detail/NNEditor/20241224/EC84A4ECB998ECA780EC97ADECA084ECB2B4.png"
+                                                                    result="success"
+                                                                    name="EC84A4ECB998ECA780EC97ADECA084ECB2B4.png"
+                                                                    size="950px/3068px"
+                                                                    filesize="266,46 kB"
+                                                                    error=""
+                                                                    width="100%"
+                                                                    height="100%"
+                                                                    style="
+                                                                        font-family: '맑은 고딕', 'Malgun Gothic', 돋움,
+                                                                            Dotum;
+                                                                        font-size: 12px;
+                                                                        max-width: 100%;
+                                                                        color: rgb(0, 0, 0);
+                                                                        font-style: normal;
+                                                                        font-variant-ligatures: normal;
+                                                                        font-variant-caps: normal;
+                                                                        font-weight: 400;
+                                                                        letter-spacing: normal;
+                                                                        orphans: 2;
+                                                                        text-indent: 0px;
+                                                                        text-transform: none;
+                                                                        widows: 2;
+                                                                        word-spacing: 0px;
+                                                                        -webkit-text-stroke-width: 0px;
+                                                                        white-space: normal;
+                                                                        text-decoration-thickness: initial;
+                                                                        text-decoration-style: initial;
+                                                                        text-decoration-color: initial;
+                                                                        display: block;
+                                                                        vertical-align: top;
+                                                                        margin: 0px auto;
+                                                                        text-align: center;
+                                                                    "
+                                                                    data-no-retina=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <br />
+                                                            <br />
+                                                        </div>
+                                                        <div
+                                                            style="display: block; content: ' '; height: 0px !important"
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                        <div style="position: relative" class="edb-img-tag-w html">
+                                                            <div style="width: 100%; height: 100%; position: relative">
+                                                                <br />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            style="
+                                                                display: block;
+                                                                content: ' ';
+                                                                height: 100px !important;
+                                                            "
+                                                        >
+                                                            <br />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //상품상세정보 -->
+                                                <!-- //상품사용후기 -->
+                                            </div>
+                                            <!-- 상품정보 끝 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 하단 상품 정보 E -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 컨텐츠 끝 -->
+                </div>
+            </div>
+            <!--#include file="./_footer.html"-->
+        </div>
+    </body>
+</html>

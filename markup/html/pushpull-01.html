@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!--#include file="./_head.html"-->
+        <link rel="stylesheet" href="../assets/css/vb/defult.css" />
+        <style>
+            section.small-screen {
+                background: url(../assets/img/customer_banner03.jpg) no-repeat center;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap" class="manusl-detail">
+            <!-- start page title section -->
+            <section class="p-0 small-screen position-relative wow top-space">
+                <div class="bg-extra-dark-gray z-index-0"></div>
+                <div class="container position-relative">
+                    <div class="row align-items-center">
+                        <div
+                            class="col-12 small-screen d-flex flex-column justify-content-center page-title-large text-center"
+                        >
+                            <!-- start page title -->
+                            <h1
+                                class="alt-font text-extra-dark-gray font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0"
+                            >
+                                Customer Center
+                            </h1>
+                            <!-- end page title -->
+                            <!-- start sub title -->
+                            <span
+                                class="d-block font-size-20 sm-font-size-18 text-extra-dark-gray text-333 margin-5px-top alt-font"
+                                >We provide innovative solutions <br class="mobile" />to expand business</span
+                            >
+                            <!-- end sub title -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end page title section -->
+            <div id="container">
+                <div id="contents">
+                    <!-- 컨텐츠 시작 -->
+                    <section class="sec_content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="xans-board-readpackage">
+                                    <div class="ec-base-table typeWrite">
+                                        <table border="0" summary="">
+                                            <caption>
+                                                Board Detail
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width: 100%" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr class="title">
+                                                    <td>
+                                                        <h3 title="제품 설명서 제목">
+                                                            A2120H & 제이드락 (JADELOCK) & 제스퍼(JASPER)
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                                <tr class="content">
+                                                    <td>
+                                                        <div class="detail">
+                                                            <div class="fr-view fr-view-article">
+                                                                <p>
+                                                                    <img
+                                                                        src="../assets/img/manual/pushpull/jadelock_jasper.jpg"
+                                                                        class="fr-fic fr-dib"
+                                                                        result="success"
+                                                                        name="ARK_A1120W_A2120H_2.jpg"
+                                                                        size="1000px/1000px"
+                                                                        filesize="140,18 kB"
+                                                                        error=""
+                                                                    />
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="attach">
+                                                    <td class="attachFile">
+                                                        <a
+                                                            id="manual-download-btn"
+                                                            href="#"
+                                                            download=""
+                                                            class="btn-large btn"
+                                                        >
+                                                            Download Manual
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 컨텐츠 끝 -->
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // URL에서 매뉴얼 순서(인덱스 번호)를 가져오는 로직 설정
+                // 예: detail.html?index=0
+                const urlParams = new URLSearchParams(window.location.search);
+                const manualIndex = parseInt(urlParams.get('index'), 10) || 0; // 파라미터가 없으면 0번째 항목 로드
+
+                // JSON 데이터 호출
+                fetch('/assets/js/manuals.json')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('네트워크 응답이 올바르지 않습니다.');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 해당 인덱스(순서)의 데이터 추출
+                        const targetManual = data[manualIndex];
+
+                        if (targetManual) {
+                            // 1. 제목 업데이트
+                            const titleElement = document.getElementById('manual-title');
+                            titleElement.textContent = targetManual.title;
+
+                            // 2. 이미지 업데이트
+                            const imageElement = document.getElementById('manual-image');
+                            imageElement.src = targetManual.imgSrc;
+                            imageElement.alt = targetManual.title;
+
+                            // 3. 다운로드 버튼 링크 및 파일명 업데이트
+                            const downloadBtn = document.getElementById('manual-download-btn');
+                            downloadBtn.href = targetManual.downloadLink;
+                            downloadBtn.download = targetManual.downloadFileName;
+                        } else {
+                            // eslint-disable-next-line no-console
+                            console.warn('해당 순서의 매뉴얼 데이터가 존재하지 않습니다.');
+                        }
+                    })
+                    .catch(error => {
+                        // eslint-disable-next-line no-console
+                        console.error('매뉴얼 데이터를 불러오는 중 오류가 발생했습니다:', error);
+                    });
+            });
+        </script>
+    </body>
+</html>

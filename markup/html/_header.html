@@ -1,0 +1,292 @@
+<header class="header-with-topbar fixed-topbar" id="menulink">
+    <!-- 상단바 (전화번호,이메일,회원관련메뉴,언어선택) -->
+    <style>
+        @media (max-width: 767px) {
+            .header-social-icon .dropdown-style-1 .btn {
+                font-size: 12px;
+            }
+
+            .header-social-icon .dropdown-style-1 .dropdown-menu li a {
+                font-size: 12px;
+            }
+
+            .col-sm-5 {
+                flex: 0 0 auto;
+                width: inherit;
+                flex-grow: 1;
+            }
+        }
+    </style>
+
+    <div class="top-header-area bg-black padding-9px-tb sm-padding-8px-tb" style="display: none">
+        <div class="container-lg sm-no-padding">
+            <div class="row align-items-center m-0">
+                <div
+                    class="col-md-4 col-sm-5 ps-lg-0 d-flex align-items-center justify-content-start vertical-align-middle pc"
+                >
+                    <a
+                        href="mailto:sales@raonark.com"
+                        class="font-size-12 font-weight-500 text-link-white-2 line-height-normal"
+                        title="sales@raonark.com"
+                        ><i class="fa fa-envelope margin-5px-right font-size-14"></i> sales@raonark.com</a
+                    >
+                </div>
+                <div class="col-md-8 col-sm-5 pe-lg-0 d-flex align-items-center justify-content-end">
+                    <div class="header-social-icon sm-text-right d-md-inline" style="display: none !important">
+                        <div
+                            class="xans-element- xans-layout xans-layout-statelogoff no-padding no-margin alt-font d-md-inline"
+                        >
+                            <a class="padding-15px-right font-size-12" href="/member/login.html">LOGIN</a>
+                            <a class="padding-15px-right font-size-12" href="/member/join.html">JOIN</a>
+                            <a
+                                href="/order/basket.html"
+                                class="xans-element- xans-layout xans-layout-orderbasketcount btnBasket font-size-12"
+                                >CART
+                                <span class="cart_no alt-font text-black font-weight-700">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="separator-line-verticle-extra-small bg-dark-gray d-inline-block margin-two-half-lr position-relative align-middle top-1px"
+                        style="display: none !important"
+                    ></div>
+                    <div class="header-social-icon sm-text-right d-md-inline">
+                        <div class="btn-group dropdown-style-1 margin-10px-left">
+                            <button
+                                type="button"
+                                class="btn dropdown-toggle sm-w-100"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Korea <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)">
+                                <li><a href="/" title="korea">Korea</a></li>
+                                <li><a href="https://en.keyin.life" title="English">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end topbar -->
+    <nav
+        class="navbar navbar-default bootsnav navbar-fixed-top header-light-transparent background-transparent navbar-expand-lg on no-full"
+    >
+        <div class="container-lg nav-header-container">
+            <!-- 로고 -->
+            <style>
+                @media screen and (max-width: 767px) {
+                    img.logo-dark.default {
+                        height: 25px;
+                    }
+                }
+            </style>
+            <div class="col-auto col-lg-3 ps-0">
+                <a href="/index.html" title="vbweb" class="logo"
+                    ><img
+                        src="./assets/img/main_logo-1.png"
+                        data-at2x="./assets/img/main_logo-1.png"
+                        class="logo-dark default"
+                        alt="Pofo"
+                        width="186"
+                        height="37" /><img
+                        src="./assets/img/logo-whitex.png"
+                        data-at2x="./assets/img/logo-whitex.png"
+                        alt="Pofo"
+                        class="logo-light"
+                        width="0"
+                        height="0"
+                /></a>
+            </div>
+
+            <!-- 상단 메뉴 -->
+            <style>
+                @media (max-width: 992px) {
+                    header nav .navbar-nav.text-normal > li > a {
+                        font-weight: 600;
+                        font-size: 24px;
+                    }
+
+                    .simple-dropdown .dropdown-menu > li > a {
+                        font-size: 22px;
+                        color: #9d9d9d;
+                    }
+
+                    .navbar-nav li > a,
+                    nav.navbar.navbar-default ul.nav > li > a,
+                    nav.navbar-brand-top.navbar.navbar-default ul.nav > li > a,
+                    header .navbar-nav li > a,
+                    header nav.navbar-fixed-top.header-light-transparent.white-link .navbar-nav > li > a,
+                    header nav.navbar-fixed-top.header-light.white-link .navbar-nav > li > a,
+                    nav.navbar.bootsnav li.dropdown ul.mega-menu-full li > a,
+                    header.sticky
+                        nav.navbar.navbar-default.navbar-fixed-top
+                        ul.nav
+                        > li
+                        > a
+                        header.sticky
+                        nav.navbar.navbar-default.navbar-top
+                        ul.nav
+                        > li
+                        > a,
+                    nav.navbar.bootsnav li.dropdown ul.mega-menu-full li.dropdown-header {
+                        margin: 0;
+                        padding: 20px 15px;
+                        font-size: 20px;
+                        color: #fff;
+                        display: block;
+                        line-height: normal;
+                    }
+
+                    nav.navbar.bootsnav ul.nav li.dropdown.simple-dropdown ul.dropdown-menu > li > a {
+                        padding: 15px;
+                        font-size: 20px;
+                        border-top: solid 1px #555555;
+                    }
+
+                    .navbar-nav > li.dropdown > .fas {
+                        display: block;
+                        position: absolute;
+                        text-align: right;
+                        left: 0px;
+                        right: 0px;
+                        top: 0;
+                        color: #fff;
+                        font-size: 28px;
+                        cursor: pointer;
+                        padding: 20px 25px;
+                    }
+
+                    nav.navbar.bootsnav.no-full .navbar-collapse {
+                    }
+
+                    .navbar-toggler .icon-bar {
+                        display: block;
+                        width: 30px;
+                        height: 4px;
+                        border-radius: 1px;
+                    }
+
+                    nav .accordion-menu,
+                    .sticky nav .accordion-menu {
+                        margin-right: 5px;
+                        padding: 24px;
+                    }
+
+                    nav.navbar.bootsnav ul.nav li.dropdown.simple-dropdown > .dropdown-menu {
+                        background-color: rgb(23 23 23 / 0%);
+                    }
+                }
+            </style>
+
+            <div class="col accordion-menu pe-0 pe-md-3">
+                <button
+                    type="button"
+                    class="navbar-toggler collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar-collapse-toggle-1"
+                >
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbar-collapse-toggle-1">
+                    <ul
+                        id="accordion"
+                        class="nav navbar-nav navbar-left no-margin alt-font text-normal"
+                        data-in="animate__fadeIn"
+                        data-out="animate__fadeOut"
+                    >
+                        <!-- start menu item -->
+                        <li class="dropdown simple-dropdown">
+                            <a href="./brand.html" data-bs-toggle="dropdown">브랜드 스토리</a>
+                        </li>
+
+                        <li class="dropdown simple-dropdown">
+                            <a href="./keyin-list.html" data-bs-toggle="dropdown">스토어</a
+                            ><i
+                                class="fas fa-angle-down dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-hidden="true"
+                            ></i>
+                            <!-- start sub menu -->
+                            <ul
+                                class="dropdown-menu animated animate__fadeOut"
+                                role="menu"
+                                style="top: 68px; display: none; opacity: 1"
+                            >
+                                <li><a href="./keyin-list.html">Keyin</a></li>
+                                <li><a href="./ark-list.html">Ark</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown simple-dropdown">
+                            <a href="./review.html" data-bs-toggle="dropdown">고객 리뷰</a>
+                        </li>
+
+                        <li class="dropdown simple-dropdown">
+                            <a href="./design.html" data-bs-toggle="dropdown">기술소개</a
+                            ><i
+                                class="fas fa-angle-down dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-hidden="true"
+                            ></i>
+                            <!-- start sub menu -->
+                            <ul
+                                class="dropdown-menu animated animate__fadeOut"
+                                role="menu"
+                                style="top: 68px; display: none; opacity: 1"
+                            >
+                                <li><a href="./design.html">디자인</a></li>
+                                <li><a href="./mortise.html">모티스</a></li>
+                                <li><a href="./iot-service.html">Iot서비스 &amp; 플러스링크</a></li>
+                                <!--li><a href="/technology/reliability_test.html">Reliability test</a></li-->
+                            </ul>
+                        </li>
+
+                        <li class="dropdown simple-dropdown">
+                            <a href="./portfolio.html" data-bs-toggle="dropdown">비즈니스</a
+                            ><i
+                                class="fas fa-angle-down dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-hidden="true"
+                            ></i>
+                            <!-- start sub menu -->
+                            <ul
+                                class="dropdown-menu animated animate__fadeOut"
+                                role="menu"
+                                style="top: 68px; display: none; opacity: 1"
+                            >
+                                <li><a href="./portfolio.html">포트폴리오</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown simple-dropdown">
+                            <a href="./agency.html">대리점 찾기</a>
+                        </li>
+
+                        <li class="dropdown simple-dropdown">
+                            <a href="./faq.html" data-bs-toggle="dropdown">고객지원</a
+                            ><i
+                                class="fas fa-angle-down dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-hidden="true"
+                            ></i>
+                            <ul class="dropdown-menu animated" role="menu" style="top: 68px">
+                                <li><a href="./faq.html">자주 묻는 질문</a></li>
+                                <li><a href="./manual.html">제품 사용설명서</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 검색하기 -->
+            <!--import(/_vb/page/layout/search.html)-->
+        </div>
+    </nav>
+</header>

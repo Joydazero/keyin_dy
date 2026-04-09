@@ -1,0 +1,119 @@
+<style>
+    #top_bottom_wrap {
+        z-index: 99;
+    }
+    @media (min-width: 768px) {
+        .footer_pc {
+            display: block;
+        }
+        .footer_mo {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .logo_m {
+            width: 30% !important;
+            padding-bottom: 1.2%;
+        }
+        .footer_pc {
+            display: none;
+        }
+        .footer_mo {
+            display: block;
+        }
+    }
+</style>
+
+<div id="top_bottom_wrap">
+    <div id="top_top">
+        <a href="#menulink" class="inner-link"
+            ><img src="./assets/img/quick_top.png" alt="scroll top" class="scroll-top-arrow"
+        /></a>
+    </div>
+    <div id="bottom_bottom">
+        <a href="#footerlink" class="inner-link"><img src="./assets/img/quick_bottom.png" alt="scroll bottom" /></a>
+    </div>
+</div>
+
+<!-- start footer -->
+<footer class="footer-modern-dark bg-extra-dark-gray padding-five-tb sm-padding-30px-tb" id="footerlink">
+    <div class="footer-widget-area padding-40px-bottom sm-padding-50px-bottom">
+        <div class="container">
+            <div class="row align-items-center" style="align-items: flex-start !important">
+                <!-- start slogan -->
+                <div class="col-lg-3 text-center text-md-start md-margin-three-bottom sm-margin-20px-bottom">
+                    <img class="logo_m logo_p" src="./assets/img/raonark-logo1.png" style="width: 50%" />
+                </div>
+                <!-- end slogan -->
+                <!-- start contact information -->
+                <div
+                    class="col-lg-5 col-md-6 text-center text-md-start font-size-16 sm-font-size-14 sm-margin-20px-bottom text-white"
+                >
+                    <ul class="margin-15px-bottom">
+                        <li class="d-inline-block"><a href="./agreement.html" class="text-999">이용약관</a></li>
+                        <li class="d-inline-block margin-10px-lr text-999">|</li>
+                        <li class="d-inline-block">
+                            <a href="./privacy.html" class="text-999">개인정보처리방침</a>
+                        </li>
+                    </ul>
+                    <span class="d-block margin-5px-bottom sm-margin-20px-bottom" module="Layout_footer"
+                        >서울특별시 금천구 가산디지털2로 101, 한라원앤원타워 A동, 1608~1609호</span
+                    >
+                    <a href="mailto:sales@raonark.com" title="sales@raonark.com" class="text-link-white-2"
+                        ><i class="d-inline fa fa-envelope margin-5px-right font-size-14 mobile"></i>
+                        sales@raonark.com</a
+                    >
+                </div>
+                <!-- end contact information -->
+                <!-- start social media -->
+                <!--div class="col-lg-1 col-md-6 social-style-2 text-center text-md-start text-link-white-2">
+                    <span module="Layout_LogoBottom">
+                        <a href="/index.html" class="text-white text-extra-large">{$mall_name}</a>
+                    </span>
+                    <div class="social-icon-style-8">
+                        <ul class="text-small ntm-font margin-20px-top sm-no-margin-bottom text-uppercase p-0 mb-0 list-unstyled">
+                            <li class="d-inline-block margin-10px-right"><a href="/shopinfo/company.html">회사소개</a></li>
+                            <li class="d-inline-block margin-10px-right"><a href="/member/agreement.html">이용약관</a></li>
+                            <li class="d-inline-block margin-10px-right"><a href="/member/privacy.html">개인정보처리방침</a></li>
+                            <li class="d-inline-block"><a href="/shopinfo/guide.html">이용안내</a></li>
+                        </ul>
+                    </div>
+                </div-->
+                <!-- end social media -->
+                <!-- start social media -->
+                <div
+                    class="col-lg-4 col-md-6 social-style-2 text-center text-md-end text-link-white-2"
+                    style="display: none"
+                >
+                    <a
+                        href="/board/urgency/urgency.html"
+                        class="btn btn-white btn-large align-top sm-margin-20px-top"
+                        target="_self"
+                        >Contact us</a
+                    >
+                </div>
+                <!-- end social media -->
+            </div>
+        </div>
+    </div>
+    <div class="container" module="Layout_footer">
+        <!-- start copyright -->
+        <div
+            class="footer-bottom border-top border-color-medium-dark-gray text-999 padding-40px-top sm-padding-30px-top"
+        >
+            <div class="row align-items-center" style="align-items: flex-start !important">
+                <div class="col-md-8 text-md-start text-center text-small">
+                    상호명 : 주식회사 라오나크(RAONARK) ㅣ 대표 : 구민기 ㅣ 개인정보책임자 : 구민기<br />
+                    사업자등록번호 : 348-87-01843 | 통신판매업신고번호 : 2021-서울금천-1060<br />
+                    Address : {$mall_addr1},<br class="mobile" />
+                    {$mall_addr2}<br />
+                    고객지원 : sales@raonark.com | 대표전화 : {$phone} <br class="mobile" />
+                    (운영시간: 월~금 09:00 ~ 18:00 | 점심시간: 12:00-13:00)
+                </div>
+                <div class="col-md-4 text-md-end text-center text-small">&copy; 2021 RAONARK. ALL RIGHT RESERVED.</div>
+            </div>
+        </div>
+        <!-- end copyright -->
+    </div>
+</footer>
+<!-- end footer -->
